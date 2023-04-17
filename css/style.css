@@ -1,0 +1,1747 @@
+/*Selectores*/
+/*Selector Universal*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Selector de etiqueta*/
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(17, 15, 15);
+    margin: 0;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 100px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3 {
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+h4 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+span {
+    color: #A531C2
+}
+
+th {
+    background-color: blueviolet;
+    color: white;
+}
+
+td {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Selector de clase*/
+.Logo {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-right: 150px;
+    height: auto;
+}
+
+.Logo-img:hover {
+    box-shadow: 0 0 20px blueviolet;
+    border-radius: 20px;
+}
+
+.Logo-img {
+    height: 40px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.Logo h4:hover {
+    box-shadow: 0 0 15px blueviolet;
+
+}
+
+.Nav {
+    margin-bottom: 30px;
+    text-decoration: none;
+
+}
+
+.Nav li {
+    display: inline-block;
+    margin-right: 50px;
+    padding-right: 10px;
+
+
+
+}
+
+
+.navegador {
+    color: rgb(231, 228, 235);
+    padding-right: 10px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    height: auto;
+}
+
+
+.navegador:hover {
+    color: blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+    border-radius: none;
+}
+
+.Partido1 {
+    background-color: #8b919a;
+    margin-left: 50px;
+}
+
+/*Herencia*/
+.Partido1 h4 {
+    color: rgb(83, 38, 125);
+    margin-left: 0px;
+}
+
+.Partido1 img {
+    width: 50px;
+}
+
+.Aside {
+    border: solid 2px gray;
+    font-size: 20px;
+    height: auto;
+    width: 250px;
+    background-color: #8b919a;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Imagen-Futbol {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+
+}
+
+.Imagen-Futbol:hover {
+    box-shadow: 0 0 30px blueviolet;
+
+}
+
+.Imagen-Tenis {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px
+}
+
+.Imagen-Tenis:hover {
+    box-shadow: 0 0 25px blueviolet;
+
+}
+
+.Imagen-Cancha {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px
+}
+
+.Imagen-Cancha:hover {
+    box-shadow: 0 0 25px blueviolet;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-align: center;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.contenedor p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contenedor h2 {
+    color: rgb(227, 220, 234);
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.Descuento {
+    background-color: #8b919a;
+    width: 500px;
+    height: 750px;
+    margin-bottom: 0px;
+    background-image: url("../imagenes/Deportes-todos-kebab-case.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.Descuento h4 {
+    color: rgb(150, 28, 150);
+    margin: 20px;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Descuento p {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: #8b919a;
+}
+
+.Tabla-Inicio {
+    border: solid 2px gray;
+    font-size: 25px;
+    height: auto;
+    width: 450px;
+    background-color: #8b919a;
+    margin-top: 0px;
+
+
+
+}
+
+.Imagen-Seccion1 {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+
+
+}
+
+.Imagen-Seccion2 {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+
+}
+
+.Imagen-Seccion3 {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+
+
+}
+
+.Secciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Quienes-somos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Quienes-somos h2 {
+    color: rgb(144, 106, 181);
+    font-size: 30px;
+    padding: 15px;
+
+
+}
+
+.Quienes-somos p {
+    color: #8b919a;
+    padding: 15px;
+}
+
+.Como-jugar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Como-jugar h2 {
+    color: rgb(144, 107, 178);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+
+}
+
+.Como-jugar ol {
+    color: #8b919a;
+    font-size: 25px;
+    padding: 15px;
+
+}
+
+.Ultimo li {
+    color: white;
+
+}
+
+.Ultimo li:hover {
+    color: blueviolet;
+
+}
+
+.Imagen-Footer {
+    width: 50px;
+}
+
+.Nav-Deportes {
+    margin-bottom: 30px;
+
+}
+
+.Nav-Deportes li {
+    display: inline-block;
+    margin-right: 50px;
+    padding-right: 10px;
+}
+
+.Aside-Deportes {
+    border: solid 2px gray;
+    font-size: 20px;
+    height: auto;
+    width: 250px;
+    background-color: #8b919a;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+
+
+}
+
+.Main-Deportes {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.Tabla {
+    border: solid 2px gray;
+    font-size: 20px;
+    height: 200px;
+    width: 450px;
+    background-color: #8b919a;
+
+
+}
+
+.Crear-Apuesta {
+    background-color: #8b919a;
+    margin-left: 70px;
+    width: 500px;
+
+
+
+
+}
+
+.Crear-Apuesta h2 {
+    background-color: blueviolet;
+    padding-top: 0px;
+
+}
+
+.Crear-Apuesta p {
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.Seleccion {
+    font-size: 20px;
+    background-color: #8b919a;
+    width: 325px;
+    height: 200px;
+}
+
+.Seleccion h2 {
+    background-color: blueviolet;
+    padding: 0px;
+}
+
+.Proximos-Eventos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+.Tenis h3 {
+    margin: 20px;
+}
+
+.Tenis table {
+    font-size: 20px;
+    height: auto;
+    background-color: #8b919a;
+    margin: 20px;
+    padding: 20px;
+    width: 1100px;
+
+
+}
+
+.Tenis button {
+    height: 40px;
+    width: 70px;
+    font-size: 15px;
+    background-color: transparent;
+
+}
+
+.Tenis span {
+    color: white;
+}
+
+.Copa-Libertadores table {
+    font-size: 20px;
+    height: auto;
+    background-color: #8b919a;
+    margin: 20px;
+    padding: 20px;
+    width: 1100px;
+
+
+}
+
+.Copa-Libertadores button {
+    height: 40px;
+    width: 70px;
+    font-size: 15px;
+    background-color: transparent
+}
+
+.Copa-Libertadores span {
+    color: white;
+}
+
+.NBA table {
+    height: auto;
+    background-color: #8b919a;
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+    width: 1100px;
+    font-size: 20px;
+
+}
+
+.NBA button {
+    height: 40px;
+    width: 70px;
+    font-size: 15px;
+    background-color: transparent
+}
+
+.NBA span {
+    color: white;
+}
+
+.Quienes-somos-Dep {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Quienes-somos-Dep h2 {
+    color: rgb(144, 106, 181);
+    font-size: 30px;
+    padding: 15px;
+
+
+}
+
+.Quienes-somos-Dep p {
+    color: #8b919a;
+    padding: 15px;
+}
+
+.Como-jugar-Dep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Como-jugar-Dep h2 {
+    color: rgb(144, 107, 178);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+
+}
+
+.Como-jugar-Dep ol {
+    color: #8b919a;
+    font-size: 25px;
+    padding: 15px;
+
+}
+
+.Ayuda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 10px;
+}
+
+.Ayuda-Logo {
+    width: 150px;
+    height: 60px;
+
+}
+
+.Ayuda-Logo2 {
+    width: 100px;
+    height: 70px;
+
+}
+
+.Ayuda-Logo3 {
+    width: 130px;
+    height: 50px;
+}
+
+.Ayuda-Logo4 {
+    width: 150px;
+    height: 70px;
+}
+
+.Pago {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Medios-Pago {
+    width: 40px;
+    height: 30px;
+    margin: 10px;
+}
+
+.Img-Apuesta {
+    width: 20px;
+    height: 20px;
+}
+
+.Formularios {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #8b919a;
+
+
+}
+
+.Formularios p {
+    padding: 10px;
+    margin: 10px;
+}
+
+.Header-Registrate h2 {
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Nav-Casino {
+    margin-bottom: 30px;
+
+}
+
+.Nav-Casino li {
+    display: inline-block;
+    margin-right: 50px;
+    padding-right: 10px;
+
+}
+
+.Header-Casino {
+    background-color: #8b919a;
+    grid-area: Header-Casino;
+}
+
+.Img-Header {
+    width: 30px;
+    height: 30px;
+}
+
+
+.Casino1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Casino1 p {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline;
+    color: rgb(135, 45, 220);
+}
+
+.Img-Casino {
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    padding: 10px;
+
+
+}
+
+
+
+.Main-Casino h3 {
+    margin: 10px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Button {
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(230, 84, 230);
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+.Button:hover {
+    color: pink;
+}
+
+.Quienes-somos-Casino {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Quienes-somos-Casino h2 {
+    color: rgb(144, 106, 181);
+    font-size: 30px;
+    padding: 15px;
+
+
+}
+
+.Quienes-somos-Casino p {
+    color: #8b919a;
+    padding: 15px;
+}
+
+.Como-jugar-Casino {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Como-jugar-Casino h2 {
+    color: rgb(144, 107, 178);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+
+}
+
+.Como-jugar-Casino ol {
+    color: #8b919a;
+    font-size: 25px;
+    padding: 15px;
+
+}
+
+.Ayuda-Casino {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 10px;
+}
+
+.Pago-Casino {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Img-Divp {
+    width: 300px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+
+.Div-Promo h3 {
+    padding-left: 100px;
+    font-size: 50px;
+}
+.Div-Promo2 h3 {
+    padding-left: 100px;
+    font-size: 50px;
+}
+.Div-Promo3 h3 {
+    padding-left: 100px;
+    font-size: 50px;
+}
+
+.Main-Info {
+    padding: 30px;
+}
+
+.Img-Info {
+    width: 300px;
+    height: 250px;
+}
+
+.Informacion {
+    background-color: #8b919a;
+    display: inline-block;
+
+}
+
+.Informacion p {
+    font-size: 30px;
+}
+.Ayuda-Promo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 30px;
+        padding: 10px;
+    
+}
+/*Bootstrap*/
+.Logo-b {
+    width: 40px;
+    height: 40px
+}
+
+
+.navbar li {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+.navbar a {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.dropdown-menu {
+    color: #A531C2;
+}
+
+.card {
+    width: auto;
+    height: auto;
+    background-color: #8b919a;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+
+
+
+}
+
+.img-fluid {
+    max-width: 100vh;
+    height: 75vh;
+
+}
+.card :hover{
+    box-shadow: 0 0 20px blueviolet;
+}
+.card-text :hover{
+    box-shadow: none;
+}
+.card-title :hover{
+    box-shadow: none;
+}
+.Logo-Twenty-one {
+    width: 150px;
+    height: 150px;
+}
+
+/*Grid Area*/
+/*INDEX*/
+.Nav {
+    grid-area: Nav;
+}
+
+.Aside {
+    grid-area: Aside;
+}
+
+.Descuento {
+    grid-area: Descuento;
+}
+
+.Tabla-Inicio {
+    grid-area: Tabla-Inicio;
+}
+
+.contenedor {
+    grid-area: contenedor;
+}
+
+.Secciones {
+    grid-area: Secciones;
+}
+
+.Quienes-somos {
+    grid-area: Quienes-somos;
+}
+
+.Como-jugar {
+    grid-area: Como-jugar;
+}
+
+/*Deportes*/
+.Nav-Deportes {
+    grid-area: Nav-Deportes;
+}
+
+.Aside-Deportes {
+    grid-area: Aside-Deportes;
+}
+
+.Main-Deportes {
+    grid-area: Main-Deportes;
+}
+
+.Proximos-Eventos {
+    grid-area: Proximos-Eventos;
+}
+
+.Quienes-somos-Dep {
+    grid-area: Quienes-somos-Dep
+}
+
+.Como-jugar-Dep {
+    grid-area: Como-jugar-Dep;
+}
+
+.Ayuda {
+    grid-area: Ayuda;
+}
+
+.Pago {
+    grid-area: Pago;
+}
+
+/*Casino*/
+.Nav-Casino {
+    grid-area: Nav-Casino;
+}
+
+.Header-Casino {
+    grid-area: Header-Casino;
+}
+
+.En-Vivo {
+    grid-area: En-Vivo;
+}
+
+.Mas-Populares {
+    grid-area: Mas-Populares;
+}
+
+.BlackJack {
+    grid-area: BlackJack;
+}
+
+.Jacktops {
+    grid-area: Jacktops;
+}
+
+.Quienes-somos-Casino {
+    grid-area: Quienes-somos-Casino;
+}
+
+.Como-jugar-Casino {
+    grid-area: Como-jugar-Casino;
+}
+
+.Ayuda-Casino {
+    grid-area: Ayuda-Casino;
+}
+
+.Pago-Casino {
+    grid-area: Pago-Casino;
+}
+
+/*Selectores Id*/
+#header {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    grid-area: Header;
+
+
+}
+
+#Header-Deportes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    grid-area: Header-Deportes;
+}
+
+#pie {
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: Footer;
+}
+
+#pie h2 {
+    color: blueviolet;
+}
+
+#pie-Deportes {
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: pie-Deportes;
+}
+
+#pie-Deportes h2 {
+    color: blueviolet;
+}
+
+#pie-Casino {
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: pie-Casino;
+
+}
+
+#pie-Casino h2 {
+    color: blueviolet;
+}
+
+#pie-Info {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+
+}
+
+#pie-Info h2 {
+    color: blueviolet;
+}
+
+/*Grilla*/
+
+#Grilla {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 1fr auto auto auto auto auto;
+    grid-gap: 20px;
+    grid-template-areas:
+        "Nav Nav Nav"
+        "Header Header Header"
+        "Aside Descuento contenedor"
+        "Aside Tabla-Inicio contenedor"
+        "Secciones Secciones Secciones"
+        "Quienes-somos Quienes-somos Quienes-somos"
+        "Footer Footer Footer"
+
+}
+
+#Grilla-Deportes {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(9, auto);
+    grid-gap: 20px;
+    grid-template-areas:
+        "Nav-Deportes Nav-Deportes Nav-Deportes"
+        "Header-Deportes Header-Deportes Header-Deportes"
+        "Aside-Deportes Main-Deportes Main-Deportes"
+        "Proximos-Eventos Proximos-Eventos Proximos-Eventos"
+        "Quienes-somos-Dep Quienes-somos-Dep Quienes-somos-Dep"
+        "Como-jugar-Dep Como-jugar-Dep Como-jugar-Dep"
+        "Ayuda Ayuda Ayuda"
+        "Pago Pago Pago"
+        "pie-Deportes pie-Deportes pie-Deportes";
+}
+
+#Grilla-Casino {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(11, auto);
+    grid-gap: 20px;
+    grid-template-areas:
+        "Nav-Casino Nav-Casino Nav-Casino Nav-Casino"
+        "Header-Casino Header-Casino Header-Casino Header-Casino"
+        "En-Vivo En-Vivo En-Vivo En-Vivo"
+        "Mas-Populares Mas-Populares Mas-Populares Mas-Populares"
+        "BlackJack BlackJack BlackJack BlackJack"
+        "Jacktops Jacktops Jacktops Jacktops"
+        "Quienes-somos-Casino Quienes-somos-Casino Quienes-somos-Casino Quienes-somos-Casino"
+        "Como-jugar-Casino Como-jugar-Casino Como-jugar-Casino Como-jugar-Casino"
+        "Ayuda-Casino Ayuda-Casino Ayuda-Casino Ayuda-Casino"
+        "Pago-Casino Pago-Casino Pago-Casino Pago-Casino"
+        "pie-Casino pie-Casino pie-Casino pie-Casino";
+}
+
+/*MediaQueris*/
+/*Mobile First*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #Grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px auto auto 350px 600px 250px 250px;
+        grid-template-areas:
+            "navegador navegador"
+            "Header Header"
+            "contenedor Descuento"
+            "contenedor Tabla-Inicio"
+            "Secciones Secciones"
+            "Quienes-somos Quienes-somos"
+            "Como-jugar Como-jugar"
+            "Footer Footer"
+    }
+
+    .Nav {
+        grid-area: navegador;
+    }
+
+    .Nav li {
+        margin: 5px;
+    }
+
+    .Nav .Logo {
+        margin: 5px;
+    }
+
+    #header {
+        margin-bottom: 0%;
+    }
+
+    .Partido1 {
+        font-size: 15px;
+    }
+
+    #header .Partido1 {
+        grid-area: Header;
+        width: 90%;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        padding: 5px;
+
+    }
+
+    .Aside {
+        display: none;
+    }
+
+    #pie .Ultimo {
+        grid-area: Footer;
+        margin: 10px;
+    }
+
+    .contenedor .carta {
+        grid-area: contenedor;
+        margin-top: 0;
+    }
+
+    .contenedor .carta2 {
+        grid-area: contenedor;
+        margin-top: 0;
+
+    }
+
+    .contenedor .carta3 {
+        grid-area: contenedor;
+        margin-top: 0;
+
+    }
+
+    .Descuento {
+        grid-area: Descuento;
+        width: auto;
+        height: 100vh;
+        margin-right: 20px;
+
+
+    }
+
+    .Seccion1 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .Seccion2 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .Seccion3 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .Tabla-Inicio {
+        grid-area: Tabla-Inicio;
+        margin-right: 20px;
+
+    }
+
+    .Quienes-somos {
+        grid-area: Quienes-somos;
+        margin-top: 50px;
+    }
+
+    .Como-jugar {
+        grid-area: Como-jugar;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+    }
+
+    .Como-jugar li {
+        margin-left: 90px;
+    }
+}
+
+/*Version Tablet*/
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    #Grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px auto auto 350px 600px 250px 250px;
+        grid-template-areas:
+            "navegador navegador"
+            "Header Header"
+            "contenedor Tabla-Inicio"
+            "contenedor Descuento"
+            "Secciones Secciones"
+            "Quienes-somos Quienes-somos"
+            "Como-jugar Como-jugar"
+            "Footer Footer"
+    }
+
+    .Nav {
+        grid-area: navegador;
+    }
+
+    .Nav li {
+        margin: 5px;
+    }
+
+    .Nav .Logo {
+        margin: 5px;
+        margin-left: 20px;
+    }
+
+    #header {
+        margin-bottom: 0%;
+    }
+
+    #header .Partido1 {
+        grid-area: Header;
+        width: 90%;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        padding: 5px;
+
+    }
+
+    .Aside {
+        display: none;
+    }
+
+    #pie .Ultimo {
+        grid-area: Footer;
+        margin: 10px;
+    }
+
+    .contenedor .carta {
+        grid-area: contenedor;
+        margin: 20px;
+        margin-top: 5px;
+    }
+
+    .contenedor .carta2 {
+        grid-area: contenedor;
+        margin: 20px;
+        margin-top: 5px;
+
+    }
+
+    .contenedor .carta3 {
+        grid-area: contenedor;
+        margin: 20px;
+        margin-left: 5px;
+
+    }
+
+    .Descuento {
+        grid-area: Descuento;
+        width: auto;
+        height: 100vh;
+        margin-right: 20px;
+
+    }
+
+    .Seccion1 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 20px;
+
+    }
+
+    .Seccion2 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 20px;
+
+    }
+
+    .Seccion3 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 20px;
+
+    }
+
+    .Tabla-Inicio {
+        grid-area: Tabla-Inicio;
+        margin: 20px;
+    }
+
+    .Quienes-somos {
+        grid-area: Quienes-somos;
+        margin-top: 50px;
+    }
+
+    .Como-jugar {
+        grid-area: Como-jugar;
+        margin-top: 50px;
+
+    }
+
+    .Como-jugar li {
+        margin-left: 90px;
+    }
+}
+
+/*Version desktop*/
+@media only screen and (min-width:1023px) {
+    #Grilla {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px 300px auto auto 350px 600px 250px 250px;
+        grid-template-areas:
+            "navegador navegador navegador"
+            "Header Header Header"
+            "Aside contenedor Tabla-Inicio"
+            "Aside contenedor Descuento"
+            "Secciones Secciones Secciones"
+            "Quienes-somos Quienes-somos Quienes-somos"
+            "Como-jugar Como-jugar Como-jugar"
+            "Footer Footer Footer"
+    }
+
+    .Nav {
+        grid-area: navegador;
+    }
+
+    .Nav li {
+        margin-right: 50px;
+        padding-right: 10px;
+    }
+
+    .Nav .Logo {
+        margin: 10px;
+        margin-right: 100px;
+        height: auto;
+    }
+
+    #header {
+        margin-bottom: 0%;
+    }
+
+    #header .Partido1 {
+        grid-area: Header;
+        width: 60%;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 50px;
+        padding: 5px;
+
+    }
+
+    .Aside {
+        grid-area: Aside;
+    }
+
+    #pie {
+        margin-bottom: 0px;
+    }
+
+    #pie .Ultimo {
+        grid-area: Footer;
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    .contenedor .carta {
+        grid-area: contenedor;
+        margin: 20px;
+        margin-top: 5px;
+    }
+
+    .contenedor .carta2 {
+        grid-area: contenedor;
+        margin: 20px;
+        margin-top: 5px;
+
+    }
+
+    .contenedor .carta3 {
+        grid-area: contenedor;
+        margin: 20px;
+        margin-left: 5px;
+
+    }
+
+    .Descuento {
+        grid-area: Descuento;
+        width: auto;
+        height: 100vh;
+        margin-right: 20px;
+
+    }
+
+    .Seccion1 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 20px;
+
+    }
+
+    .Seccion2 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 20px;
+
+    }
+
+    .Seccion3 {
+        grid-area: Secciones;
+        padding: 20px;
+        margin-top: 20px;
+
+    }
+
+    .Tabla-Inicio {
+        grid-area: Tabla-Inicio;
+        margin: 20px;
+    }
+
+    .Quienes-somos {
+        grid-area: Quienes-somos;
+        margin-top: 50px;
+    }
+
+    .Como-jugar {
+        grid-area: Como-jugar;
+        margin-top: 50px;
+
+    }
+
+    .Como-jugar li {
+        margin-left: 90px;
+    }
+}
+
+/*Seccion Deportes*/
+/*Vista mobile*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #Grilla-Deportes {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 100px auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "navegador-Deportes navegador-Deportes"
+            "Header-Deportes Header-Deportes"
+            "Main-Deportes Main-Deportes"
+            "Proximos-Eventos Proximos-Eventos"
+            "Quienes-somos-Dep Quienes-somos-Dep"
+            "Como-jugar-Dep Como-jugar-Dep"
+            "Ayuda Ayuda"
+            "Pago Pago"
+            "Footer Footer"
+    }
+
+    .Nav-Deportes {
+        grid-area: navegador-Deportes;
+    }
+
+    .Nav-Deportes li {
+        margin: 10px;
+    }
+
+    .Nav-Deportes .Logo {
+        margin: 10px;
+        margin-right: 10px;
+    }
+
+    #Header-Deportes {
+        grid-area: Header-Deportes;
+        padding-right: 30px;
+    }
+
+    .Partido1 p {
+        font-size: 15px;
+    }
+
+    .Main-Deportes {
+        grid-area: Main-Deportes;
+        margin-left: 90px;
+
+    }
+
+    .Aside-Deportes {
+        display: none;
+    }
+
+    .Proximos-Eventos {
+        grid-area: Proximos-Eventos;
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+    .Proximos-Eventos h3 {
+        text-align: center;
+
+    }
+
+    .Proximos-Eventos .Tenis {
+        text-align: center;
+    }
+
+    .Proximos-Eventos .Copa-Libertadores {
+        text-align: center;
+    }
+
+    .Proximos-Eventos .NBA {
+        text-align: center;
+    }
+
+    .Quienes-somos-Dep {
+        grid-area: Quienes-somos-Dep;
+    }
+
+    .Como-jugar-Dep {
+        grid-area: Como-jugar-Dep;
+    }
+
+    .Ayuda {
+        grid-area: Ayuda;
+    }
+
+    .Pago {
+        grid-area: Pago;
+    }
+
+    #pie-Deportes {
+        grid-area: Footer;
+    }
+}
+
+/*Vista table*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #Grilla-Deportes {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 100px auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "navegador-Deportes navegador-Deportes"
+            "Header-Deportes Header-Deportes"
+            "Proximos-Eventos Proximos-Eventos"
+            "Main-Deportes Main-Deportes"
+            "Quienes-somos-Dep Quienes-somos-Dep"
+            "Como-jugar-Dep Como-jugar-Dep"
+            "Ayuda Ayuda"
+            "Pago Pago"
+            "Footer Footer"
+    }
+
+    .Nav-Deportes {
+        grid-area: navegador-Deportes;
+    }
+
+    .Nav-Deportes li {
+        margin: 10px;
+    }
+
+    .Nav-Deportes .Logo {
+        margin: 10px;
+        margin-right: 10px;
+    }
+
+    #Header-Deportes {
+        grid-area: Header-Deportes;
+        padding-right: 30px;
+    }
+
+    .Partido1 p {
+        font-size: 15px;
+    }
+
+    .Main-Deportes {
+        grid-area: Main-Deportes;
+        margin-left: 90px;
+
+    }
+
+    .Aside-Deportes {
+        display: none;
+    }
+
+    .Proximos-Eventos {
+        grid-area: Proximos-Eventos;
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+    .Proximos-Eventos h3 {
+        text-align: center;
+
+    }
+
+    .Proximos-Eventos .Tenis {
+        text-align: center;
+    }
+
+    .Proximos-Eventos .Copa-Libertadores {
+        text-align: center;
+    }
+
+    .Proximos-Eventos .NBA {
+        text-align: center;
+    }
+
+    .Quienes-somos-Dep {
+        grid-area: Quienes-somos-Dep;
+    }
+
+    .Como-jugar-Dep {
+        grid-area: Como-jugar-Dep;
+    }
+
+    .Ayuda {
+        grid-area: Ayuda;
+    }
+
+    .Pago {
+        grid-area: Pago;
+    }
+
+    #pie-Deportes {
+        grid-area: Footer;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    #Grilla-Deportes {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "navegador-Deportes navegador-Deportes navegador-Deportes"
+            "Header-Deportes Header-Deportes Header-Deportes"
+            "Aside Main-Deportes Main-Deportes"
+            "Proximos-Eventos Proximos-Eventos Proximos-Eventos"
+            "Quienes-somos-Dep Quienes-somos-Dep Quienes-somos-Dep"
+            "Como-jugar-Dep Como-jugar-Dep Como-jugar-Dep"
+            "Ayuda Ayuda Ayuda"
+            "Pago Pago Pago"
+            "Footer Footer Footer"
+    }
+
+    .Nav-Deportes {
+        grid-area: navegador-Deportes;
+    }
+
+    .Nav-Deportes li {
+        margin: 10px;
+    }
+
+    .Nav-Deportes .Logo {
+        margin: 10px;
+        margin-right: 150px;
+    }
+
+    #Header-Deportes {
+        grid-area: Header-Deportes;
+        padding-right: 30px;
+    }
+
+    .Partido1 p {
+        font-size: 15px;
+    }
+
+    .Main-Deportes {
+        grid-area: Main-Deportes;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .Aside-Deportes {
+        grid-area: Aside;
+    }
+
+    .Proximos-Eventos {
+        grid-area: Proximos-Eventos;
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+    .Proximos-Eventos h3 {
+        text-align: center;
+
+    }
+
+    .Proximos-Eventos .Tenis {
+        text-align: center;
+    }
+
+    .Proximos-Eventos .Copa-Libertadores {
+        text-align: center;
+    }
+
+    .Proximos-Eventos .NBA {
+        text-align: center;
+    }
+
+    .Quienes-somos-Dep {
+        grid-area: Quienes-somos-Dep;
+    }
+
+    .Como-jugar-Dep {
+        grid-area: Como-jugar-Dep;
+    }
+
+    .Ayuda {
+        grid-area: Ayuda;
+    }
+
+    .Pago {
+        grid-area: Pago;
+    }
+
+    #pie-Deportes {
+        grid-area: Footer;
+    }
+}

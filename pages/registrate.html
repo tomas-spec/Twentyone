@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Logo-->
+    <link rel="shortcut icon" href="../imagenes/twenty-one-kebab-case.png" type="image/x-icon">
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registrate</title>
+</head>
+
+<body>
+    <!--Inicio del Nav-->
+    <!--Enlaces relativos-->
+    <!--Inicio del Nav-->
+    <!--Enlaces Relativos-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark";>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../imagenes/Logo-Twenty-one-kebab-case.png"
+                    class="Logo-Twenty-one" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./casino.html"><span>Casino</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./deportes.html"> <span>Deportes</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./informacion.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Informacion</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> <img src="../imagenes/grupo.png" class="Logo-b"
+                                        alt="Sobre nosotros"> Sobre Nosotros</a></li>
+                            <li><a class="dropdown-item" href="#"> <img src="../imagenes/link.png" class="Logo-b"
+                                        alt="Link"> Links Destacados</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"> <img src="../imagenes/apoyo.png" class="Logo-b"
+                                        alt="Apoyo"> Ayuda al consumidor</a></li>
+                        </ul>
+                    </li>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="./promociones.html"><span>Promociones</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span>Registrate</span></a>
+                            </li>
+                    </div>
+            </div>
+    </nav>
+    </div>
+
+    <header class="Header-Registrate">
+        <h2>Registrate y empezá a jugar!</h2>
+    </header>
+    <!--Inicio de Formularios-->
+    <!--Fila DE informacion de mi sitio-->
+    <div class="Formularios">
+        <form action="procesar.php" method="post">
+            <p>
+                <label for="nombre">Ingrese su Nombre</label>
+                <input type="text" name="nombre" required placeholder="Ingrese su nombre">
+            </p>
+            <p>
+                <label for="apellido">Ingrese su apellido</label>
+                <input type="text" name="apellido" required placeholder="Ingrese su apellido">
+            </p>
+            <p>
+                <label for="email">Ingrese su correo electronico</label>
+                <input type="email" name="email" required placeholder="hola@servidor">
+            </p>
+            <p>
+                <label for="pass">Ingrese su contraseña</label>
+                <input type="password" name="pass" required placeholder="Ingrese su contrasena">
+            </p>
+            <p>
+                <label for="number">Edad</label>
+                <input type="number">
+            </p>
+            <!--Input radio-->
+            <h4>Medios de pago</h4>
+            <label for=" Medios de pago"> Trasferencia Bancaria</label>
+            <input type="radio" name="Medios de pago" value="Trasferencia bancaria">
+
+            <label for="Medios de pago">Tarjeta de debito o credito</label>
+            <input type="radio" name="Medios de pago" value="Tarjeta de debito o credito">
+            <!--Input checkbox-->
+            <p>
+            <h4> Terminos y Condiciones</h4>
+            <label for="Terminos y Condiciones">Acepto los terminos y condicciones de
+                esta plataforma
+            </label>
+            <input type="checkbox" name="acepto" value="1">
+            </p>
+            <h4> Dejanos tus dudas y cometarios </h4>
+            <!--Textarea-->
+            <textarea name="mensaje" cols="30" rows="10"></textarea>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar Formulario</button>
+
+            </p>
+        </form>
+    </div>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" />
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <!--Fin del primer formulario-->
+    <!--Comienzo de otro form-->
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Default file input example</label>
+        <input class="form-control" type="file" id="formFile" />
+    </div>
+    <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple />
+    </div>
+    <div class="mb-3">
+        <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+        <input class="form-control" type="file" id="formFileDisabled" disabled />
+    </div>
+    <div class="mb-3">
+        <label for="formFileSm" class="form-label">Small file input example</label>
+        <input class="form-control form-control-sm" id="formFileSm" type="file" />
+    </div>
+    <div>
+        <label for="formFileLg" class="form-label">Large file input example</label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file" />
+    </div>
+    <!--FIN DE FORM-->
+    <!--Comienzo de otro form-->
+    <form class="row g-3">
+        <div class="col-md-4">
+            <label for="validationServer01" class="form-label">First name</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required />
+            <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationServer02" class="form-label">Last name</label>
+            <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required />
+            <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationServerUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationServer03" class="form-label">City</label>
+            <input type="text" class="form-control is-invalid" id="validationServer03"
+                aria-describedby="validationServer03Feedback" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationServer04" class="form-label">State</label>
+            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
+                required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+            </select>
+            <div id="validationServer04Feedback" class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationServer05" class="form-label">Zip</label>
+            <input type="text" class="form-control is-invalid" id="validationServer05"
+                aria-describedby="validationServer05Feedback" required />
+            <div id="validationServer05Feedback" class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                    aria-describedby="invalidCheck3Feedback" required />
+                <label class="form-check-label" for="invalidCheck3">
+                    Agree to terms and conditions
+                </label>
+                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+    <!--Fin del form-->
+
+    <!--Inicio de Footer-->
+    <footer id="pie">
+        <div class="Ultimo">
+            <h2>SOBRE NOSOTROS</h2>
+            <ul>
+                <li>Juego Responsable</li>
+                <li>Reglas</li>
+                <li>Contrato y Politica de Privacidad</li>
+            </ul>
+        </div>
+        <div class="Ultimo">
+            <h2>LINKS DESTACADOS</h2>
+            <ul>
+                <li>Black Jack</li>
+                <li>Casino</li>
+                <li>Bingo</li>
+                <li>Ruleta</li>
+            </ul>
+        </div>
+        <div class="Ultimo">
+            <h2>AYUDA</h2>
+            <ul>
+                <li>Idioma</li>
+                <li>Ayuda, terminos y condiciones</li>
+                <li>Contacto:Twenty-one@gmail.com</li>
+            </ul>
+        </div>
+        <div class="Ultimo">
+            <h2>SEGUINOS EN<br>NUESTRAS REDES</h2>
+            <img class="Imagen-Footer" src="../imagenes/facebook.png" alt="facebook">
+            <img class="Imagen-Footer" src="../imagenes/instagram.png" alt="Instagram">
+            <img class="Imagen-Footer" src="../imagenes/tik-tok-kebab-case.png" alt="Tik-tok">
+        </div>
+    </footer>
+</body>
+
+</html>
