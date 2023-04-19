@@ -52,12 +52,14 @@ h4 {
     margin: 0;
     padding: 0;
 }
-h5{
+
+h5 {
     color: #a531c2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
 
 }
+
 p {
     color: white;
     font-size: 20px;
@@ -133,8 +135,10 @@ td {
 .Partido1 {
     background-color: #8b919a;
     margin-left: 10px;
+    height: auto;
     
-    
+
+
 }
 
 /*Herencia*/
@@ -211,40 +215,13 @@ td {
     padding: 20px;
 }
 
-.Descuento {
-    background-color: #8b919a;
-    width: 500px;
-    height: 750px;
-    margin-bottom: 0px;
-    background-image: url("../imagenes/Deportes-todos-kebab-case.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-}
 
-.Descuento h4 {
-    color: rgb(150, 28, 150);
-    margin: 20px;
-    font-size: 80px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.Descuento p {
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    background-color: #8b919a;
-}
 
 .Tabla-Inicio {
     border: solid 2px gray;
     font-size: 25px;
     height: auto;
-    width: 450px;
+    width: 350px;
     background-color: #8b919a;
     margin-top: 0px;
 }
@@ -512,7 +489,7 @@ td {
 }
 
 .Ayuda-Logo3 {
-    width: 130px;
+    width: 170px;
     height: 50px;
 }
 
@@ -657,6 +634,7 @@ td {
     color: #8b919a;
     font-size: 25px;
     padding: 15px;
+    margin-left: 25px;
 }
 
 .Ayuda-Casino {
@@ -664,6 +642,7 @@ td {
     flex-direction: row;
     justify-content: space-around;
     margin: 30px;
+    margin-left: 50px;
     padding: 10px;
 }
 
@@ -735,6 +714,9 @@ td {
     width: 40px;
     height: 40px;
 }
+.Section-Deportes h2{
+    margin-top: 20px;
+}
 
 .navbar li {
     display: flex;
@@ -746,6 +728,7 @@ td {
     font-size: 20px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #a531c2;
 }
 
 .dropdown-menu {
@@ -782,124 +765,85 @@ td {
     width: 150px;
     height: 150px;
 }
-
+.carousel {
+    width: 750px;
+    height: 500px;
+    margin-right: 10px; 
+}
+.carousel :hover{
+    box-shadow: 0 0 25px blueviolet;
+}
+.Main h2{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.Section-Deportes{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+.Section-Deportes2{
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+.Seccion1{
+    margin: 20px;
+}
+.Seccion2{
+    margin: 20px;
+}
+.Seccion3{
+    margin: 20px;
+}
 /*Grid Area*/
 /*INDEX*/
-.Nav {
+#Grilla {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-gap: 20px;
+    grid-template-areas:
+        "Nav Nav Nav"
+        "Header Header Header"
+        "Aside Main Tabla-Inicio"
+        "Aside Main Tabla-Inicio"
+        "Secciones Secciones Secciones"
+        "Quienes-somos Quienes-somos Quienes-somos"
+        "Como-jugar Como-jugar Como-jugar"
+        "Footer Footer Footer"
+
+}
+.navbar {
     grid-area: Nav;
 }
 
-.Aside {
+.Aside{
     grid-area: Aside;
 }
-
-.Descuento {
-    grid-area: Descuento;
+.Main{
+    grid-area: Main;
 }
-
-.Tabla-Inicio {
+.Tabla-Inicio{
     grid-area: Tabla-Inicio;
 }
-
-.contenedor {
-    grid-area: contenedor;
-}
-
-.Secciones {
+.Secciones{
     grid-area: Secciones;
 }
-
-.Quienes-somos {
+.Quienes-somos{
     grid-area: Quienes-somos;
 }
-
-.Como-jugar {
+.Como-jugar{
     grid-area: Como-jugar;
 }
 
-/*Deportes*/
 
-
-/*Casino*/
-.Nav-Casino {
-    grid-area: Nav-Casino;
-}
-
-.Header-Casino {
-    grid-area: Header-Casino;
-}
-
-.En-Vivo {
-    grid-area: En-Vivo;
-}
-
-.Mas-Populares {
-    grid-area: Mas-Populares;
-}
-
-.BlackJack {
-    grid-area: BlackJack;
-}
-
-.Jacktops {
-    grid-area: Jacktops;
-}
-
-.Quienes-somos-Casino {
-    grid-area: Quienes-somos-Casino;
-}
-
-.Como-jugar-Casino {
-    grid-area: Como-jugar-Casino;
-}
-
-.Ayuda-Casino {
-    grid-area: Ayuda-Casino;
-}
-
-.Pago-Casino {
-    grid-area: Pago-Casino;
-}
-/*Deportes*/
-.Nav-Deportes {
-    grid-area: Nav-Deportes;
-}
-
-.Aside-Deportes {
-    grid-area: Aside-Deportes;
-}
-
-.Main-Deportes {
-    grid-area: Main-Deportes;
-}
-
-.Proximos-Eventos {
-    grid-area: Proximos-Eventos;
-}
-
-.Quienes-somos-Dep {
-    grid-area: Quienes-somos-Dep
-}
-
-.Como-jugar-Dep {
-    grid-area: Como-jugar-Dep;
-}
-
-.Ayuda {
-    grid-area: Ayuda;
-}
-
-.Pago {
-    grid-area: Pago;
-}
 
 /*Selectores Id*/
 #header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+    margin-top: 80px;
     grid-area: Header;
-    margin-top: 20px;
 }
 
 #Header-Deportes {
@@ -951,416 +895,147 @@ td {
     color: blueviolet;
 }
 
-/*Grilla*/
-
-#Grilla {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto 1fr auto auto auto auto auto;
-    grid-gap: 20px;
-    grid-template-areas:
-        "Nav Nav Nav"
-        "Header Header Header"
-        "Aside Descuento contenedor"
-        "Aside Tabla-Inicio contenedor"
-        "Secciones Secciones Secciones"
-        "Quienes-somos Quienes-somos Quienes-somos"
-        "Footer Footer Footer";
-}
-
-
-#Grilla-Casino {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(11, auto);
-    grid-gap: 20px;
-    grid-template-areas:
-        "Nav-Casino Nav-Casino Nav-Casino Nav-Casino"
-        "Header-Casino Header-Casino Header-Casino Header-Casino"
-        "En-Vivo En-Vivo En-Vivo En-Vivo"
-        "Mas-Populares Mas-Populares Mas-Populares Mas-Populares"
-        "BlackJack BlackJack BlackJack BlackJack"
-        "Jacktops Jacktops Jacktops Jacktops"
-        "Quienes-somos-Casino Quienes-somos-Casino Quienes-somos-Casino Quienes-somos-Casino"
-        "Como-jugar-Casino Como-jugar-Casino Como-jugar-Casino Como-jugar-Casino"
-        "Ayuda-Casino Ayuda-Casino Ayuda-Casino Ayuda-Casino"
-        "Pago-Casino Pago-Casino Pago-Casino Pago-Casino"
-        "pie-Casino pie-Casino pie-Casino pie-Casino";
-}
-#Grilla-Deportes {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(9, auto);
-    grid-gap: 20px;
-    grid-template-areas:
-        "Nav-Deportes Nav-Deportes Nav-Deportes"
-        "Header-Deportes Header-Deportes Header-Deportes"
-        "Aside-Deportes Main-Deportes Main-Deportes"
-        "Proximos-Eventos Proximos-Eventos Proximos-Eventos"
-        "Quienes-somos-Dep Quienes-somos-Dep Quienes-somos-Dep"
-        "Como-jugar-Dep Como-jugar-Dep Como-jugar-Dep"
-        "Ayuda Ayuda Ayuda"
-        "Pago Pago Pago"
-        "pie-Deportes pie-Deportes pie-Deportes";
-}
-
 /*MediaQueris*/
 /*Mobile First*/
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
     #Grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 300px auto auto 350px 600px 250px 250px;
+        grid-template-rows:  300px 300px auto auto 350px 600px 250px 250px;
         grid-template-areas:
-            "navegador navegador"
+            "Nav Nav"
             "Header Header"
-            "contenedor Descuento"
-            "contenedor Tabla-Inicio"
+            "Main Tabla-Inicio"
+            "Main Tabla-Inicio"
             "Secciones Secciones"
             "Quienes-somos Quienes-somos"
             "Como-jugar Como-jugar"
-            "Footer Footer";
+            "Footer Footer"
     }
-
-    .Nav {
-        grid-area: navegador;
+    .navbar {
+        grid-area: Nav;
     }
-
-    .Nav li {
-        margin: 5px;
-    }
-
-    .Nav .Logo {
-        margin: 5px;
-    }
-
-    #header {
-        margin-bottom: 0%;
-    }
-
-    .Partido1 {
-        font-size: 15px;
-    }
-
-    #header .Partido1 {
+    #header{
         grid-area: Header;
-        width: 90%;
-        height: 200px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 20px;
-        padding: 5px;
     }
-
-    .Aside {
+    .Aside{
         display: none;
     }
-
-    #pie .Ultimo {
-        grid-area: Footer;
-        margin: 10px;
+    .Main{
+        grid-area: Main;
     }
-
-    .contenedor .carta {
-        grid-area: contenedor;
-        margin-top: 0;
-    }
-
-    .contenedor .carta2 {
-        grid-area: contenedor;
-        margin-top: 0;
-    }
-
-    .contenedor .carta3 {
-        grid-area: contenedor;
-        margin-top: 0;
-    }
-
-    .Descuento {
-        grid-area: Descuento;
-        width: auto;
-        height: 100vh;
-        margin-right: 20px;
-    }
-
-    .Seccion1 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 40px;
-    }
-
-    .Seccion2 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 40px;
-    }
-
-    .Seccion3 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 40px;
-    }
-
-    .Tabla-Inicio {
+    .Tabla-Inicio{
         grid-area: Tabla-Inicio;
-        margin-right: 20px;
     }
-
-    .Quienes-somos {
+    .Secciones{
+        grid-area: Secciones;
+    }
+    .Quienes-somos{
         grid-area: Quienes-somos;
-        margin-top: 50px;
     }
-
-    .Como-jugar {
+    .Como-jugar{
         grid-area: Como-jugar;
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-
-    .Como-jugar li {
-        margin-left: 90px;
+        margin-top: 90px;
+        margin-left: 20px;
+    } 
+    #pie{
+        grid-area: Footer;
     }
 }
-
 /*Version Tablet*/
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width:768px) and (max-width:1023px) {
     #Grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 300px auto auto 350px 600px 250px 250px;
+        grid-template-rows: 300px 300px auto auto 350px 600px 250px 250px;
         grid-template-areas:
-            "navegador navegador"
+            "Nav Nav"
             "Header Header"
-            "contenedor Tabla-Inicio"
-            "contenedor Descuento"
+            "Main Tabla-Inicio"
+            "Main Tabla-Inicio"
             "Secciones Secciones"
             "Quienes-somos Quienes-somos"
             "Como-jugar Como-jugar"
-            "Footer Footer";
+            "Footer Footer"
     }
-
-    .Nav {
-        grid-area: navegador;
+    .navbar{
+        grid-area: Nav;
     }
-
-    .Nav li {
-        margin: 5px;
-    }
-
-    .Nav .Logo {
-        margin: 5px;
-        margin-left: 20px;
-    }
-
-    #header {
-        margin-bottom: 0%;
-    }
-
-    #header .Partido1 {
+    #header{
         grid-area: Header;
-        width: 90%;
-        height: 200px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 20px;
-        padding: 5px;
     }
-
-    .Aside {
+    .Main{
+        grid-area: Main;
+    }
+    .Tabla-Inicio{
+        grid-area: Tabla-Inicio;
+    }
+    .Secciones{
+        grid-area: Secciones;
+    }
+    .Quienes-somos{
+        grid-area: Quienes-somos;
+    }
+    .Como-jugar{
+        grid-area: Como-jugar;
+        margin-top: 90px;
+        margin-left: 20px;
+        
+    }
+    #pie{
+        grid-area: Footer;
+    }
+    .Aside{
         display: none;
     }
-
-    #pie .Ultimo {
-        grid-area: Footer;
-        margin: 10px;
-    }
-
-    .contenedor .carta {
-        grid-area: contenedor;
-        margin: 20px;
-        margin-top: 5px;
-    }
-
-    .contenedor .carta2 {
-        grid-area: contenedor;
-        margin: 20px;
-        margin-top: 5px;
-    }
-
-    .contenedor .carta3 {
-        grid-area: contenedor;
-        margin: 20px;
-        margin-left: 5px;
-    }
-
-    .Descuento {
-        grid-area: Descuento;
-        width: auto;
-        height: 100vh;
-        margin-right: 20px;
-    }
-
-    .Seccion1 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .Seccion2 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .Seccion3 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .Tabla-Inicio {
-        grid-area: Tabla-Inicio;
-        margin: 20px;
-    }
-
-    .Quienes-somos {
-        grid-area: Quienes-somos;
-        margin-top: 50px;
-    }
-
-    .Como-jugar {
-        grid-area: Como-jugar;
-        margin-top: 50px;
-    }
-
-    .Como-jugar li {
-        margin-left: 90px;
-    }
 }
-
 /*Version desktop*/
-@media only screen and (min-width: 1023px) {
-    #Grilla {
+@media only screen and (min-width:1023px){
+    #Grilla{
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-template-rows: 100px 300px auto auto 350px 600px 250px 250px;
+        grid-template-rows: 150px 300px auto auto 350px 600px 250px 250px;
         grid-template-areas:
-            "navegador navegador navegador"
-            "Header Header Header"
-            "Aside contenedor Tabla-Inicio"
-            "Aside contenedor Descuento"
-            "Secciones Secciones Secciones"
-            "Quienes-somos Quienes-somos Quienes-somos"
-            "Como-jugar Como-jugar Como-jugar"
-            "Footer Footer Footer";
+        "Nav Nav Nav"
+        "Header Header Header"
+        "Aside Main Tabla-Inicio"
+        "Aside Main Tabla-Inicio"
+        "Secciones Secciones Secciones"
+        "Quienes-somos Quienes-somos Quienes-somos"
+        "Como-jugar Como-jugar Como-jugar"
+        "Footer Footer Footer"
     }
-
-    .Nav {
-        grid-area: navegador;
+    .navbar{
+        grid-area: Nav;
     }
-
-    .Nav li {
-        margin-right: 50px;
-        padding-right: 10px;
-    }
-
-    .Nav .Logo {
-        margin: 10px;
-        margin-right: 100px;
-        height: auto;
-    }
-
-    #header {
-        margin-bottom: 0%;
-    }
-
-    #header .Partido1 {
+    #header{
         grid-area: Header;
-        width: 60%;
-        height: 200px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 50px;
-        padding: 5px;
     }
-
-    .Aside {
+    .Main{
+        grid-area: Main;
+    }
+    .Tabla-Inicio{
+        grid-area: Tabla-Inicio;
+    }
+    .Secciones{
+        grid-area: Secciones;
+    }
+    .Quienes-somos{
+        grid-area: Quienes-somos;
+    }
+    .Como-jugar{
+        grid-area: Como-jugar;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        
+    }
+    #pie{
+        grid-area: Footer;
+    }
+    .Aside{
         grid-area: Aside;
     }
-
-    #pie {
-        margin-bottom: 0px;
-    }
-
-    #pie .Ultimo {
-        grid-area: Footer;
-        margin: 10px;
-        margin-bottom: 0px;
-    }
-
-    .contenedor .carta {
-        grid-area: contenedor;
-        margin: 20px;
-        margin-top: 5px;
-    }
-
-    .contenedor .carta2 {
-        grid-area: contenedor;
-        margin: 20px;
-        margin-top: 5px;
-    }
-
-    .contenedor .carta3 {
-        grid-area: contenedor;
-        margin: 20px;
-        margin-left: 5px;
-    }
-
-    .Descuento {
-        grid-area: Descuento;
-        width: auto;
-        height: 100vh;
-        margin-right: 20px;
-    }
-
-    .Seccion1 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .Seccion2 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .Seccion3 {
-        grid-area: Secciones;
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .Tabla-Inicio {
-        grid-area: Tabla-Inicio;
-        margin: 20px;
-    }
-
-    .Quienes-somos {
-        grid-area: Quienes-somos;
-        margin-top: 50px;
-    }
-
-    .Como-jugar {
-        grid-area: Como-jugar;
-        margin-top: 50px;
-    }
-
-    .Como-jugar li {
-        margin-left: 90px;
-    }
 }
-
-/*Seccion Deportes*/
-/*Vista mobile*/
