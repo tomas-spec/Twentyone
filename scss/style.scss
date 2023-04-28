@@ -346,10 +346,13 @@ body {
         @include sizes(300px, 250px);
         margin: 20px;
         padding: 10px;
-        height: 350px;
-        transition: height 2s ease; 
+        
     }
-
+    .Img-Casino:hover {
+        height: 350px;
+        transition: height 2s ease;
+    }
+    
     .Button {
         @include sizes(90px, 40px);
         font-size: 20px;
