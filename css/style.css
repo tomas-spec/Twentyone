@@ -10,16 +10,17 @@ body {
   background-image: linear-gradient(to top, #4e0442, #3e0c39, #2f0e2e, #220e23, #170a18);
 }
 
-h1 {
-  color: blueviolet;
-  font-size: 100px;
+h1, .Header-Registrate h2, .Header-Casino h2 {
+  color: #a531c2;
+  font-size: 20px;
   text-align: center;
-  font-family: Lato;
+  font-family: Nunito;
 }
 
 h2 {
   color: rgb(247, 239, 239);
   font-family: Quicksand;
+  font-size: 32px;
 }
 
 h3 {
@@ -30,7 +31,7 @@ h3 {
 }
 
 h4 {
-  color: rgb(247, 239, 239);
+  color: #a531c2;
   font-family: Quicksand;
   font-size: 20px;
   margin: 0;
@@ -67,8 +68,8 @@ th td {
 .Aside, .Aside-Deportes {
   border: solid 2px #8b919a;
   font-size: 20px;
+  width: 200px;
   height: auto;
-  width: 250px;
   background-color: #8b919a;
   margin: 10px;
   display: flex;
@@ -85,8 +86,8 @@ th td {
 .Tabla-Inicio, .Tabla {
   border: solid 2px #8b919a;
   font-size: 25px;
-  height: auto;
-  width: 350px;
+  width: 400px;
+  height: 100%;
   background-color: #8b919a;
   margin-top: 0px;
 }
@@ -102,7 +103,7 @@ th td {
   height: 150px;
   margin: 10px;
 }
-.Quienes-somos, .Quienes-somos-Casino p, .Quienes-somos-Casino h2, .Quienes-somos-Casino, .Quienes-somos-Dep p, .Quienes-somos-Dep h2, .Quienes-somos-Dep {
+.Quienes-somos, .Quienes-somos-Info p, .Quienes-somos-Info h2, .Quienes-somos-Info, .Quienes-somos-Casino p, .Quienes-somos-Casino h2, .Quienes-somos-Casino, .Quienes-somos-Dep p, .Quienes-somos-Dep h2, .Quienes-somos-Dep {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -110,12 +111,12 @@ th td {
   margin: 0px;
   padding: 0px;
 }
-.Quienes-somos h2, .Quienes-somos-Casino h2, .Quienes-somos-Dep h2 {
+.Quienes-somos h4, .Quienes-somos-Info h4, .Quienes-somos-Casino h4, .Quienes-somos-Dep h4 {
   color: #a531c2;
   font-size: 30px;
   padding: 15px;
 }
-.Quienes-somos p, .Quienes-somos-Casino p, .Quienes-somos-Dep p {
+.Quienes-somos p, .Quienes-somos-Info p, .Quienes-somos-Casino p, .Quienes-somos-Dep p {
   color: #8b919a;
   padding: 15px;
 }
@@ -125,7 +126,7 @@ th td {
   flex-direction: column;
   align-items: center;
 }
-.Como-jugar h2, .Como-jugar-Casino h2, .Como-jugar-Dep h2 {
+.Como-jugar h4, .Como-jugar-Casino h4, .Como-jugar-Dep h4 {
   color: #a531c2;
   font-size: 40px;
   font-family: Nunito;
@@ -134,10 +135,10 @@ th td {
 .Como-jugar ol, .Como-jugar-Casino ol, .Como-jugar-Dep ol {
   color: #8b919a;
   font-size: 25px;
-  padding: 15px;
+  padding-right: 35px;
 }
 
-.Main-Deportes {
+.contenedor-Deportes {
   display: flex;
   flex-direction: row;
 }
@@ -154,16 +155,16 @@ th td {
 }
 .Proximos-Eventos .Tenis table, .Proximos-Eventos .NBA .NBA span table, .Proximos-Eventos .NBA .NBA button table, .Proximos-Eventos .NBA table, .Proximos-Eventos .Copa-Libertadores .Copa-Libertadores span table, .Proximos-Eventos .Copa-Libertadores .Copa-Libertadores button table, .Proximos-Eventos .Copa-Libertadores table {
   font-size: 20px;
+  width: auto;
   height: auto;
   background-color: #8b919a;
   margin: 20px;
   padding: 20px;
-  width: 1100px;
 }
 .Proximos-Eventos .Tenis table .Tenis button, .Proximos-Eventos .NBA table .Tenis button, .Proximos-Eventos .NBA .NBA table span button, .Proximos-Eventos .NBA .NBA table button button, .Proximos-Eventos .Tenis table .NBA button, .Proximos-Eventos .NBA table .NBA button, .Proximos-Eventos .Copa-Libertadores table .Tenis button, .Proximos-Eventos .Copa-Libertadores table .NBA button, .Proximos-Eventos .Copa-Libertadores .Copa-Libertadores table span button, .Proximos-Eventos .Copa-Libertadores .Copa-Libertadores table button button, .Proximos-Eventos .Tenis table .Copa-Libertadores button, .Proximos-Eventos .NBA table .Copa-Libertadores button, .Proximos-Eventos .Copa-Libertadores table .Copa-Libertadores button {
-  height: 40px;
-  width: 70px;
-  font-size: 15px;
+  width: 40px;
+  height: 70px;
+  font-size: 16px;
   background-color: transparent;
 }
 .Proximos-Eventos .Tenis table .Tenis span, .Proximos-Eventos .NBA table .Tenis span, .Proximos-Eventos .NBA .NBA table span span, .Proximos-Eventos .NBA .NBA table button span, .Proximos-Eventos .Tenis table .NBA span, .Proximos-Eventos .NBA table .NBA span, .Proximos-Eventos .Copa-Libertadores table .Tenis span, .Proximos-Eventos .Copa-Libertadores table .NBA span, .Proximos-Eventos .Copa-Libertadores .Copa-Libertadores table span span, .Proximos-Eventos .Copa-Libertadores .Copa-Libertadores table button span, .Proximos-Eventos .Tenis table .Copa-Libertadores span, .Proximos-Eventos .NBA table .Copa-Libertadores span, .Proximos-Eventos .Copa-Libertadores table .Copa-Libertadores span {
@@ -206,31 +207,18 @@ th td {
   height: 20px;
 }
 
-.Header-Casino {
-  background-color: #8b919a;
-  grid-area: Header-Casino;
-}
-.Header-Casino .Casino1 {
-  display: flex;
-  justify-content: space-evenly;
-}
-.Header-Casino .Img-Header {
-  width: 30px;
-  height: 30px;
-  margin-right: 50px;
-}
-.Header-Casino p {
-  font-size: 30px;
-  font-family: Quicksand;
-  display: inline-block;
-  color: blueviolet;
-}
-
 .Img-Casino {
   width: 300px;
   height: 250px;
   margin: 20px;
   padding: 10px;
+  box-shadow: 0 0 15px #a531c2;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.Img-Casino:hover {
+  transform: scale(1.2);
 }
 
 .Button {
@@ -247,7 +235,7 @@ th td {
   color: rgb(247, 239, 239);
 }
 
-.Div-Promo h3, .Div-Promo3 h3, .Div-Promo2 h3 {
+.Div-Promo h1, .Div-Promo .Header-Registrate h2, .Header-Registrate .Div-Promo h2, .Div-Promo .Header-Casino h2, .Header-Casino .Div-Promo h2, .Div-Promo3 h1, .Div-Promo3 .Header-Registrate h2, .Header-Registrate .Div-Promo3 h2, .Div-Promo3 .Header-Casino h2, .Header-Casino .Div-Promo3 h2, .Div-Promo2 h1, .Div-Promo2 .Header-Registrate h2, .Header-Registrate .Div-Promo2 h2, .Div-Promo2 .Header-Casino h2, .Header-Casino .Div-Promo2 h2 {
   padding-left: 20px;
   font-size: 30px;
   color: #a531c2;
@@ -258,6 +246,33 @@ th td {
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
+}
+
+.Header-Info h1, .Header-Info .Header-Registrate h2, .Header-Registrate .Header-Info h2, .Header-Info .Header-Casino h2, .Header-Casino .Header-Info h2 {
+  font-size: 52px;
+}
+
+.Aclaraciones-Info {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Aclaraciones-Info h3 {
+  font-family: Quicksand;
+  color: #a531c2;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.Aclaraciones-Info p {
+  font-family: Nunito;
+  color: #8b919a;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 /*Boostrap*/
@@ -291,7 +306,7 @@ th td {
   margin-left: 30px;
 }
 .card .img-fluid {
-  max-width: 100vh;
+  width: 100vh;
   height: 55vh;
 }
 .card .card :hover {
@@ -304,8 +319,8 @@ th td {
 }
 
 .carousel {
-  width: 750px;
-  height: 500px;
+  width: 100vh;
+  height: 600px;
   margin-right: 10px;
 }
 
@@ -317,18 +332,21 @@ th td {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.Section-Deportes, .Section-Deportes2 {
+.Main h2 .Section-Deportes, .Main h2 .Section-Deportes2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .Seccion1, .Seccion3, .Seccion2 {
   margin: 20px;
 }
 
+.Deportes .img-fluid, .Deportes2 .img-fluid {
+  width: 500px;
+  height: auto;
+}
+
 /*Transitions*/
-.Header-Registrate h2 {
+.Header-Registrate h1, .Header-Registrate h2, .Header-Casino h1, .Header-Casino h2 {
   display: flex;
   justify-content: center;
   color: #a531c2;
@@ -340,6 +358,9 @@ th td {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+.Header-Registrate h2, .Header-Casino h2 {
+  font-size: 32px;
+}
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -349,7 +370,7 @@ th td {
   }
 }
 
-.Div-Promo h3, .Div-Promo2 h3, .Div-Promo3 h3 {
+.Div-Promo h1, .Div-Promo2 h1, .Div-Promo3 h1, .Div-Promo .Header-Registrate h2, .Header-Registrate .Div-Promo h2, .Div-Promo2 .Header-Registrate h2, .Header-Registrate .Div-Promo2 h2, .Div-Promo3 .Header-Registrate h2, .Header-Registrate .Div-Promo3 h2, .Div-Promo .Header-Casino h2, .Header-Casino .Div-Promo h2, .Div-Promo2 .Header-Casino h2, .Header-Casino .Div-Promo2 h2, .Div-Promo3 .Header-Casino h2, .Header-Casino .Div-Promo3 h2 {
   animation-duration: 4s;
   animation-name: aparecer;
   animation-delay: 5s;
@@ -363,6 +384,23 @@ th td {
   100% {
     opacity: 1;
   }
+}
+
+/*Maps*/
+.btn--facebok {
+  background-color: rgb(67, 67, 186);
+}
+
+.btn--twitter {
+  background-color: rgb(98, 98, 183);
+}
+
+.btn--tiktok {
+  background-color: #a531c2;
+}
+
+.btn--github {
+  background-color: #8b919a;
 }
 
 /*Grid Area*/
@@ -395,7 +433,7 @@ th td {
   grid-area: Secciones;
 }
 
-.Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p {
+.Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p {
   grid-area: Quienes-somos;
 }
 
@@ -408,40 +446,46 @@ th td {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 80px;
   grid-area: Header;
 }
 #header .Partido1, #Header-Deportes .Partido1, #Header-Deportes h4 {
   background-color: #8b919a;
   margin-left: 10px;
+  width: auto;
   height: auto;
 }
-#header h4, #Header-Deportes h4 {
+#header h1, #Header-Deportes h1, #header .Header-Registrate h2, #Header-Deportes .Header-Registrate h2, .Header-Registrate #header h2, .Header-Registrate #Header-Deportes h2, #header .Header-Casino h2, #Header-Deportes .Header-Casino h2, .Header-Casino #header h2, .Header-Casino #Header-Deportes h2 {
   color: #a531c2;
   margin-left: 0px;
 }
 #header .Img-Partido1, #Header-Deportes .Img-Partido1 {
   width: 50px;
+  height: auto;
 }
 
-#pie, #pie-Info h2, #pie-Info, #pie-Casino h2, #pie-Casino, h2, #pie-Deportes {
+#pie, #pie-Deportes {
   margin: 40px;
   display: flex;
   justify-content: space-evenly;
   grid-area: Footer;
 }
-#pie h2, #pie-Info h2, #pie-Casino h2, h2 h2, #pie-Deportes h2 {
+#pie h5, #pie-Deportes h5 {
   color: #a531c2;
   margin-bottom: 10px;
-  margin-left: 10px;
+  font-size: Lato;
 }
-#pie .Ultimo li, #pie-Info .Ultimo li, #pie-Casino .Ultimo li, h2 .Ultimo li, #pie-Deportes .Ultimo li {
+#pie .Ultimo .Redes, #pie-Deportes .Ultimo .Redes {
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+#pie .Ultimo li, #pie-Deportes .Ultimo li {
   color: rgb(247, 239, 239);
+  justify-content: center;
 }
-#pie .Ultimo li:hover, #pie-Info .Ultimo li:hover, #pie-Casino .Ultimo li:hover, h2 .Ultimo li:hover, #pie-Deportes .Ultimo li:hover {
+#pie .Ultimo .Ultimo li:hover, #pie-Deportes .Ultimo .Ultimo li:hover {
   color: #a531c2;
 }
-#pie .Imagen-Footer, #pie-Info .Imagen-Footer, #pie-Casino .Imagen-Footer, h2 .Imagen-Footer, #pie-Deportes .Imagen-Footer {
+#pie .Ultimo .Imagen-Footer, #pie-Deportes .Ultimo .Imagen-Footer {
   width: 50px;
 }
 
@@ -452,13 +496,14 @@ th td {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 300px 300px auto auto auto auto auto;
-    grid-template-areas: "Nav " "Header " "Main" "Secciones" "Quienes-somos" "Como-jugar" "Footer";
+    grid-template-areas: "Nav" "Header" "Main" "Secciones" "Quienes-somos" "Como-jugar" "Footer";
   }
   .navbar {
     grid-area: Nav;
   }
   #header, #Header-Deportes {
     grid-area: Header;
+    margin-left: 10px;
   }
   .Aside, .Aside-Deportes {
     display: none;
@@ -473,15 +518,12 @@ th td {
   .Secciones {
     grid-area: Secciones;
   }
-  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p {
+  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p {
     grid-area: Quienes-somos;
   }
   .Como-jugar, .Como-jugar-Dep, .Como-jugar-Dep h2, .Como-jugar-Dep ol, .Como-jugar-Casino, .Como-jugar-Casino h2, .Como-jugar-Casino ol {
     grid-area: Como-jugar;
     margin-left: 50px;
-  }
-  #pie, #pie-Deportes, h2, #pie-Casino, #pie-Casino h2, #pie-Info, #pie-Info h2 {
-    grid-area: Footer;
   }
 }
 /*Version Tablet*/
@@ -507,14 +549,14 @@ th td {
   .Secciones {
     grid-area: Secciones;
   }
-  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p {
+  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p {
     grid-area: Quienes-somos;
   }
   .Como-jugar, .Como-jugar-Dep, .Como-jugar-Dep h2, .Como-jugar-Dep ol, .Como-jugar-Casino, .Como-jugar-Casino h2, .Como-jugar-Casino ol {
     grid-area: Como-jugar;
-  }
-  #pie, #pie-Deportes, h2, #pie-Casino, #pie-Casino h2, #pie-Info, #pie-Info h2 {
-    grid-area: Footer;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 80px;
   }
   .Aside, .Aside-Deportes {
     display: none;
@@ -543,7 +585,7 @@ th td {
   .Secciones {
     grid-area: Secciones;
   }
-  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p {
+  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p {
     grid-area: Quienes-somos;
   }
   .Como-jugar, .Como-jugar-Dep, .Como-jugar-Dep h2, .Como-jugar-Dep ol, .Como-jugar-Casino, .Como-jugar-Casino h2, .Como-jugar-Casino ol {
@@ -552,12 +594,10 @@ th td {
     margin-bottom: 20px;
     margin-left: 20px;
   }
-  #pie, #pie-Deportes, h2, #pie-Casino, #pie-Casino h2, #pie-Info, #pie-Info h2 {
-    grid-area: Footer;
-  }
   .Aside, .Aside-Deportes {
     grid-area: Aside;
   }
 }
+/*Grilla Deportes*/
 
 /*# sourceMappingURL=style.css.map */
