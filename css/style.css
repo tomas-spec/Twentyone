@@ -65,10 +65,10 @@ th td {
 }
 
 /*Selector de clase*/
-.Aside, .Aside-Deportes {
+.Aside, .contenedor-Deportes .Aside-Deportes {
   border: solid 2px #8b919a;
   font-size: 20px;
-  width: 200px;
+  width: 150px;
   height: auto;
   background-color: #8b919a;
   margin: 10px;
@@ -83,7 +83,7 @@ th td {
   margin-right: 10px;
 }
 
-.Tabla-Inicio, .Tabla {
+.Tabla-Inicio, .contenedor-Deportes .Tabla {
   border: solid 2px #8b919a;
   font-size: 25px;
   width: 400px;
@@ -103,7 +103,7 @@ th td {
   height: 150px;
   margin: 10px;
 }
-.Quienes-somos, .Quienes-somos-Info p, .Quienes-somos-Info h2, .Quienes-somos-Info, .Quienes-somos-Casino p, .Quienes-somos-Casino h2, .Quienes-somos-Casino, .Quienes-somos-Dep p, .Quienes-somos-Dep h2, .Quienes-somos-Dep {
+.Quienes-somos, .Aclaraciones-Info, .Quienes-somos-Info p, .Quienes-somos-Info h2, .Quienes-somos-Info, .Quienes-somos-Casino p, .Quienes-somos-Casino h2, .Quienes-somos-Casino, .Quienes-somos-Dep p, .Quienes-somos-Dep h2, .Quienes-somos-Dep {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -111,12 +111,12 @@ th td {
   margin: 0px;
   padding: 0px;
 }
-.Quienes-somos h4, .Quienes-somos-Info h4, .Quienes-somos-Casino h4, .Quienes-somos-Dep h4 {
+.Quienes-somos h4, .Aclaraciones-Info h4, .Quienes-somos-Info h4, .Quienes-somos-Casino h4, .Quienes-somos-Dep h4 {
   color: #a531c2;
   font-size: 30px;
   padding: 15px;
 }
-.Quienes-somos p, .Quienes-somos-Info p, .Quienes-somos-Casino p, .Quienes-somos-Dep p {
+.Quienes-somos p, .Aclaraciones-Info p, .Quienes-somos-Info p, .Quienes-somos-Casino p, .Quienes-somos-Dep p {
   color: #8b919a;
   padding: 15px;
 }
@@ -142,6 +142,14 @@ th td {
   display: flex;
   flex-direction: row;
 }
+.contenedor-Deportes .Encuentros .img-fluid {
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #a531c2;
+}
+.contenedor-Deportes .Encuentros h2 {
+  margin-left: 10px;
+}
 
 .Proximos-Eventos {
   display: flex;
@@ -155,7 +163,7 @@ th td {
 }
 .Proximos-Eventos .Tenis table, .Proximos-Eventos .NBA .NBA span table, .Proximos-Eventos .NBA .NBA button table, .Proximos-Eventos .NBA table, .Proximos-Eventos .Copa-Libertadores .Copa-Libertadores span table, .Proximos-Eventos .Copa-Libertadores .Copa-Libertadores button table, .Proximos-Eventos .Copa-Libertadores table {
   font-size: 20px;
-  width: auto;
+  width: 100%;
   height: auto;
   background-color: #8b919a;
   margin: 20px;
@@ -254,25 +262,16 @@ th td {
 
 .Aclaraciones-Info {
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 .Aclaraciones-Info h3 {
   font-family: Quicksand;
   color: #a531c2;
   font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
 }
 .Aclaraciones-Info p {
   font-family: Nunito;
   color: #8b919a;
   font-size: 35px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
 }
 
 /*Boostrap*/
@@ -417,7 +416,7 @@ th td {
   grid-area: Nav;
 }
 
-.Aside, .Aside-Deportes {
+.Aside, .contenedor-Deportes .Aside-Deportes {
   grid-area: Aside;
 }
 
@@ -425,7 +424,7 @@ th td {
   grid-area: Main;
 }
 
-.Tabla-Inicio, .Tabla {
+.Tabla-Inicio, .contenedor-Deportes .Tabla {
   grid-area: Tabla-Inicio;
 }
 
@@ -433,7 +432,7 @@ th td {
   grid-area: Secciones;
 }
 
-.Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p {
+.Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p, .Aclaraciones-Info {
   grid-area: Quienes-somos;
 }
 
@@ -451,6 +450,7 @@ th td {
 #header .Partido1, #Header-Deportes .Partido1, #Header-Deportes h4 {
   background-color: #8b919a;
   margin-left: 10px;
+  margin-top: 70px;
   width: auto;
   height: auto;
 }
@@ -505,20 +505,20 @@ th td {
     grid-area: Header;
     margin-left: 10px;
   }
-  .Aside, .Aside-Deportes {
+  .Aside, .contenedor-Deportes .Aside-Deportes {
     display: none;
   }
   .Main {
     grid-area: Main;
     margin-left: 20px;
   }
-  .Tabla-Inicio, .Tabla {
+  .Tabla-Inicio, .contenedor-Deportes .Tabla {
     display: none;
   }
   .Secciones {
     grid-area: Secciones;
   }
-  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p {
+  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p, .Aclaraciones-Info {
     grid-area: Quienes-somos;
   }
   .Como-jugar, .Como-jugar-Dep, .Como-jugar-Dep h2, .Como-jugar-Dep ol, .Como-jugar-Casino, .Como-jugar-Casino h2, .Como-jugar-Casino ol {
@@ -543,13 +543,13 @@ th td {
   .Main {
     grid-area: Main;
   }
-  .Tabla-Inicio, .Tabla {
+  .Tabla-Inicio, .contenedor-Deportes .Tabla {
     grid-area: Tabla-Inicio;
   }
   .Secciones {
     grid-area: Secciones;
   }
-  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p {
+  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p, .Aclaraciones-Info {
     grid-area: Quienes-somos;
   }
   .Como-jugar, .Como-jugar-Dep, .Como-jugar-Dep h2, .Como-jugar-Dep ol, .Como-jugar-Casino, .Como-jugar-Casino h2, .Como-jugar-Casino ol {
@@ -558,7 +558,7 @@ th td {
     margin-bottom: 20px;
     margin-left: 80px;
   }
-  .Aside, .Aside-Deportes {
+  .Aside, .contenedor-Deportes .Aside-Deportes {
     display: none;
   }
 }
@@ -579,13 +579,13 @@ th td {
   .Main {
     grid-area: Main;
   }
-  .Tabla-Inicio, .Tabla {
+  .Tabla-Inicio, .contenedor-Deportes .Tabla {
     grid-area: Tabla-Inicio;
   }
   .Secciones {
     grid-area: Secciones;
   }
-  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p {
+  .Quienes-somos, .Quienes-somos-Dep, .Quienes-somos-Dep h2, .Quienes-somos-Dep p, .Quienes-somos-Casino, .Quienes-somos-Casino h2, .Quienes-somos-Casino p, .Quienes-somos-Info, .Quienes-somos-Info h2, .Quienes-somos-Info p, .Aclaraciones-Info {
     grid-area: Quienes-somos;
   }
   .Como-jugar, .Como-jugar-Dep, .Como-jugar-Dep h2, .Como-jugar-Dep ol, .Como-jugar-Casino, .Como-jugar-Casino h2, .Como-jugar-Casino ol {
@@ -594,7 +594,7 @@ th td {
     margin-bottom: 20px;
     margin-left: 20px;
   }
-  .Aside, .Aside-Deportes {
+  .Aside, .contenedor-Deportes .Aside-Deportes {
     grid-area: Aside;
   }
 }

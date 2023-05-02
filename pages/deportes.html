@@ -30,40 +30,35 @@
 
     <!--Inicio del Nav-->
     <!--Enlaces Relativos-->
-    <nav class="navbar navbar-expand-md navbar navbar-dark" ;>
+    <nav class="navbar navbar-expand-md navbar navbar-dark"">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img src="../imagenes/Logo-Twenty-one-kebab-case.png"
-                    class="Logo-Twenty-one" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                class="Logo-Twenty-one" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./casino.html"><span>Casino</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> <span>Deportes</span></a>
+                        <a class="nav-link" aria-current="page" href="./casino.html"><span>Casino</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./informacion.html"> <span>Informacion</span></a>
+                        <a class="nav-link" href="#"><span>Deportes</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./informacion.html"><span>Informacion</span></a>
                     </li>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="./promociones.html"><span>Promociones</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./registrate.html"><span>Registrate</span></a>
-                            </li>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./promociones.html"><span>Promociones</span></a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registrate.html"><span>Registrate</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    </div>
-    </div>
 
     <!--Inicio del Header-->
     <!--Selectores Id y de clase-->
@@ -126,7 +121,7 @@
     <div class="contenedor-Deportes">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-d-none sm-d-none md-d-none col-lg-2 col-xl-2 col-xxl-2">
+                <div class="col-d-none sm-d-none md-d-none col-lg-2 col-xl-2">
                     <aside class="Aside-Deportes">
                         <!--Tabla-->
                         <table class="table-responsive table-hover">
@@ -243,21 +238,17 @@
                     </aside>
                 </div>
                 <!--Cantidad de columnas a cubrir-->
-                <div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6">
-                    <div class="card">
-                        <img src="../imagenes/EstadioRiver-kebab-case.jpeg" class="img-fluid" alt="River">
-                        <div class="card-body">
-                            <h2 class="card-title">Liga Argentina⚽️</h2>
-                            <p class="card-text">
-                                <span>River quiere pisar fuerte <br>en la primera fecha <br>en el Mas Monumental.
-                                    Revisa el historial <br>frente a Belgrano y aposta por quien <br>crees que
-                                    sera el ganador!</span>
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="Encuentros">
+                    <h2>Mira todos los partidos de hoy</h2>
+                    <img src="../imagenes/Asistencias.jpg" class="img-fluid" alt="Futbol">
+                    <h2>Hoy hay Uefa Champions: <br>Barcelona vs Milan </h2>
+                    <img src="../imagenes/Champions.jpg" class="img-fluid" alt="Futbol"> 
+
+                    </div> 
                 </div>
 
-                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="col-d-none sm-d-none col-md-4 col-lg-4 col-xl-4">
                     <table class="Tabla table-responsive table-hover">
                         <th>Liga Argentina⚽️</th>
                         <tr>
@@ -585,13 +576,16 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="Ayuda-Casino">
-
+    <div class="Ayuda">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <img class="Ayuda-Logo" src="../imagenes/logo-lineagratuita-kebab-case.png" alt="Logo-Ayuda">
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <img class="Ayuda-Logo2" src="../imagenes/Logo-Ayuda-kebab-case.png" alt="Logo-Ayuda">
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <img class="Ayuda-Logo3" src="../imagenes/logo-autoexcluyete-kebab-case.png" alt="Logo-Ayuda">
                 </div>
             </div>
