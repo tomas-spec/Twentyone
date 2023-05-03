@@ -14,7 +14,7 @@ h1, .Header-Registrate h2, .Header-Casino h2 {
   color: #a531c2;
   font-size: 20px;
   text-align: center;
-  font-family: Nunito;
+  font-family: Lato;
 }
 
 h2 {
@@ -115,10 +115,13 @@ th td {
   color: #a531c2;
   font-size: 30px;
   padding: 15px;
+  font-family: Quicksand;
 }
 .Quienes-somos p, .Aclaraciones-Info p, .Quienes-somos-Info p, .Quienes-somos-Casino p, .Quienes-somos-Dep p {
   color: #8b919a;
   padding: 15px;
+  font-size: 25px;
+  font-family: Nunito;
 }
 
 .Como-jugar, .Como-jugar-Casino ol, .Como-jugar-Casino h2, .Como-jugar-Casino, .Como-jugar-Dep ol, .Como-jugar-Dep h2, .Como-jugar-Dep {
@@ -129,13 +132,14 @@ th td {
 .Como-jugar h4, .Como-jugar-Casino h4, .Como-jugar-Dep h4 {
   color: #a531c2;
   font-size: 40px;
-  font-family: Nunito;
+  font-family: Quicksand;
   padding: 10px;
 }
 .Como-jugar ol, .Como-jugar-Casino ol, .Como-jugar-Dep ol {
   color: #8b919a;
   font-size: 25px;
   padding-right: 35px;
+  font-family: Nunito;
 }
 
 .contenedor-Deportes {
@@ -157,6 +161,7 @@ th td {
   justify-content: center;
   align-content: center;
   align-items: center;
+  margin-right: 150px;
 }
 .Proximos-Eventos h3 {
   margin: 20px;
@@ -226,7 +231,7 @@ th td {
 }
 
 .Img-Casino:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .Button {
@@ -359,6 +364,7 @@ th td {
 }
 .Header-Registrate h2, .Header-Casino h2 {
   font-size: 32px;
+  font-family: Quicksand;
 }
 @keyframes aparecer {
   0% {
@@ -383,23 +389,6 @@ th td {
   100% {
     opacity: 1;
   }
-}
-
-/*Maps*/
-.btn--facebok {
-  background-color: rgb(67, 67, 186);
-}
-
-.btn--twitter {
-  background-color: rgb(98, 98, 183);
-}
-
-.btn--tiktok {
-  background-color: #a531c2;
-}
-
-.btn--github {
-  background-color: #8b919a;
 }
 
 /*Grid Area*/
@@ -457,6 +446,7 @@ th td {
 #header h1, #Header-Deportes h1, #header .Header-Registrate h2, #Header-Deportes .Header-Registrate h2, .Header-Registrate #header h2, .Header-Registrate #Header-Deportes h2, #header .Header-Casino h2, #Header-Deportes .Header-Casino h2, .Header-Casino #header h2, .Header-Casino #Header-Deportes h2 {
   color: #a531c2;
   margin-left: 0px;
+  font-family: Quicksand;
 }
 #header .Img-Partido1, #Header-Deportes .Img-Partido1 {
   width: 50px;
@@ -472,17 +462,14 @@ th td {
 #pie h5, #pie-Deportes h5 {
   color: #a531c2;
   margin-bottom: 10px;
-  font-size: Lato;
-}
-#pie .Ultimo .Redes, #pie-Deportes .Ultimo .Redes {
-  font-size: 35px;
-  letter-spacing: 5px;
+  font-family: Quicksand;
 }
 #pie .Ultimo li, #pie-Deportes .Ultimo li {
   color: rgb(247, 239, 239);
   justify-content: center;
+  font-family: Nunito;
 }
-#pie .Ultimo .Ultimo li:hover, #pie-Deportes .Ultimo .Ultimo li:hover {
+#pie .Ultimo li:hover, #pie-Deportes .Ultimo li:hover {
   color: #a531c2;
 }
 #pie .Ultimo .Imagen-Footer, #pie-Deportes .Ultimo .Imagen-Footer {

@@ -22,6 +22,7 @@ $font3: Nunito;
     height: $height;
 }
 
+
 /*Selectores*/
 
 
@@ -42,7 +43,7 @@ h1 {
     color: $color3;
     font-size: 20px;
     text-align: center;
-    font-family: $font3;
+    font-family: $font1;
 }
 
 h2 {
@@ -164,11 +165,14 @@ th {
         color: $color3;
         font-size: 30px;
         padding: 15px;
+        font-family: $font2
     }
 
     p {
         color: $color2;
         padding: 15px;
+        font-size: 25px;
+        font-family: $font3;
     }
 }
 
@@ -181,7 +185,7 @@ th {
     h4 {
         color: $color3;
         font-size: 40px;
-        font-family: $font3;
+        font-family: $font2;
         padding: 10px;
     }
 
@@ -189,6 +193,7 @@ th {
         color: $color2;
         font-size: 25px;
         padding-right: 35px;
+        font-family: $font3;
 
     }
 }
@@ -225,6 +230,7 @@ th {
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-right: 150px;
 
 
     h3 {
@@ -359,7 +365,7 @@ th {
 }
 
 .Img-Casino:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -471,15 +477,15 @@ th {
         font-family: $font2;
         color: $color3;
         font-size: 40px;
-        
-        
+
+
     }
 
     p {
         font-family: $font3;
         color: $color2;
         font-size: 35px;
-        
+
 
     }
 
@@ -592,6 +598,7 @@ th {
     h2 {
         @extend h1;
         font-size: 32px;
+        font-family: $font2;
 
     }
 
@@ -627,22 +634,6 @@ th {
 
     }
 }
-
-/*Maps*/
-$colors:(facebok: $color7,
-    twitter: $color8,
-    tiktok: $color3,
-    github: $color2,
-);
-
-@each $name-color,
-$bgcolor in $colors {
-    .btn--#{$name-color} {
-        background-color: $bgcolor;
-    }
-}
-
-
 
 /*Grid Area*/
 /*INDEX*/
@@ -710,6 +701,7 @@ $bgcolor in $colors {
     h1 {
         color: $color3;
         margin-left: 0px;
+        font-family: $font2
 
     }
 
@@ -744,31 +736,29 @@ $bgcolor in $colors {
     h5 {
         color: $color3;
         margin-bottom: 10px;
-        font-size: $font1;
+        font-family: $font2;
 
     }
 
     .Ultimo {
-        .Redes {
-            font-size: 35px;
-            letter-spacing: 5px;
-
-        }
 
         li {
             color: $color5;
             justify-content: center;
+            font-family: $font3;
+        
         }
 
 
-        .Ultimo li:hover {
+        li:hover {
             color: $color3;
         }
 
         .Imagen-Footer {
             width: 50px;
         }
-    }
+
+}
 }
 
 #pie-Deportes {
