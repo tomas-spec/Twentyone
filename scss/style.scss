@@ -96,6 +96,10 @@ th {
     }
 }
 
+label {
+    color: $color5;
+}
+
 /*Selector de clase*/
 
 .Aside {
@@ -208,10 +212,13 @@ th {
 
     .Tabla {
         @extend .Tabla-Inicio;
+        margin-right: 10px;
     }
 
 
     .Encuentros {
+        margin-right: 30px;
+
         .img-fluid {
             margin: 15px;
             border-radius: 15px;
@@ -702,7 +709,6 @@ th {
         color: $color3;
         margin-left: 0px;
         font-family: $font2
-
     }
 
     .Img-Partido1 {
@@ -746,7 +752,7 @@ th {
             color: $color5;
             justify-content: center;
             font-family: $font3;
-        
+
         }
 
 
@@ -758,7 +764,7 @@ th {
             width: 50px;
         }
 
-}
+    }
 }
 
 #pie-Deportes {

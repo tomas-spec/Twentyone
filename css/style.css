@@ -64,6 +64,10 @@ th td {
   padding: 10px;
 }
 
+label {
+  color: rgb(247, 239, 239);
+}
+
 /*Selector de clase*/
 .Aside, .contenedor-Deportes .Aside-Deportes {
   border: solid 2px #8b919a;
@@ -145,6 +149,12 @@ th td {
 .contenedor-Deportes {
   display: flex;
   flex-direction: row;
+}
+.contenedor-Deportes .Tabla {
+  margin-right: 10px;
+}
+.contenedor-Deportes .Encuentros {
+  margin-right: 30px;
 }
 .contenedor-Deportes .Encuentros .img-fluid {
   margin: 15px;

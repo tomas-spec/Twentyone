@@ -68,29 +68,30 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"">
-          <input type=" text" class="form-control" placeholder="Last name" aria-label="Last name">
+                <input type=" text" class="form-control" placeholder="Apellido" aria-label="Apellido">
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <label for="floatingInput">Email</label>
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+                <label for="floatingPassword">Contraseña</label>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contrseña">
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <span class="input-group-text">@</span>
+                <label for="floatingInput">Confirmar Email</label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
                 <label for="floatingInputGroup1">Username</label>
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
             </div>
 
         </div>
@@ -98,56 +99,49 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <label for="inputAddress" class="form-label">Address</label>
+                <label for="inputAddress" class="form-label">Direccion</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <label for="inputAddress2" class="form-label">Direccion 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, estudio, o piso">
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <label for="inputCity" class="form-label">City</label>
+                <label for="inputCity" class="form-label">Ciudad</label>
                 <input type="text" class="form-control" id="inputCity">
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <label for="inputState" class="form-label">State</label>
+                <label for="inputState" class="form-label">Estado</label>
                 <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                    <option selected>Caba</option>
+                    <option>La Plata</option>
+                    <option>Eldorado</option>
+                    <option>Brandsen</option>
                 </select>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
-                        Check me out
+                        Acepto las condiciones de uso
                     </label>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+            <div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
             </div>
             </form>
-
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                         <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox
-                                input</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-                        <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
                                 checked>
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
-                                input</label>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Acepto recibir informacion
+                                adicional
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -264,7 +258,8 @@
                                 <a href="https://www.instagram.com/tomas_duran/">
                                     <img class="Imagen-Footer" src="../imagenes/instagram.png" alt="Instagram"></a>
                                 <a href="https://www.tiktok.com/en">
-                                    <img class="Imagen-Footer" src="../imagenes/tik-tok-kebab-case.png" alt="Tik-tok"></a>
+                                    <img class="Imagen-Footer" src="../imagenes/tik-tok-kebab-case.png"
+                                        alt="Tik-tok"></a>
                             </div>
                         </div>
                     </div>
