@@ -108,3 +108,14 @@ let GananciaApuestasChampionsCity = restaChampionsCity(sumaChampionsCity(precioA
 console.log('Tus ganancias apostando 400 pesos al Manchester City son de ' + GananciaApuestasChampionsCity)
 
 //Final NBA
+function finalNba(anotaJokic, anotaLowry, operacion) {
+    switch(operacion) {
+        case "*":
+            return anotaJokic * anotaLowry;
+            break;
+        default:
+            return 0;
+            break;
+    }
+}
+console.log('Tus ganancias si anota Jokic 30 ptos y Lowry 20 ptos es de : ' + (finalNba(80, 90, "*")))
