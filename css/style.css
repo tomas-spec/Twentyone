@@ -401,6 +401,16 @@ label {
   }
 }
 
+.Main-Rulett {
+  background: url("../imagenes/roulette.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
 /*Grid Area*/
 /*INDEX*/
 #Grilla {
