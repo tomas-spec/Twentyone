@@ -1,3 +1,5 @@
+const eventoRealizado = localStorage.getItem("eventoRealizado");{
+
 let entrada = prompt('Ingrese su nombre');
 
 console.log(entrada);
@@ -5,10 +7,22 @@ console.log(entrada);
 let salida = prompt(`Bienvenido a Twenty-one, ${entrada}, estas listo para jugar?`);
 
 console.log(salida);
+localStorage.setItem("eventoRealizado", true);
+}
+const fechaNacimiento = prompt("Ingresa tu fecha de nacimiento en formato DD/MM/AAAA:");
+const partesFecha = fechaNacimiento.split('/');
+const dia = parseInt(partesFecha[0]);
+const mes = parseInt(partesFecha[1])-1; // Restamos 1 al mes ya que los meses en JavaScript empiezan desde 0 (enero es 0, febrero es 1, etc.)
+const anio = parseInt(partesFecha[2]); 
+const fechaNac = new Date(anio, mes,);
+const edad = (new Date() - fechaNac) / (365.25 * 24 * 60 * 60 * 0) // Cálculo de la edad en años
 
+ permitirIngreso = (edad >= 18) ? "Puede ingresar" : "No puede ingresar";
+
+alert(permitirIngreso);
 //Menor de edad
 // fecha de nacimiento al usuario
-const fechaNacimiento = prompt('Ingrese su fecha de nacimiento (en formato DD/MM/AAAA)');
+/*const fechaNacimiento = prompt('Ingrese su fecha de nacimiento (en formato DD/MM/AAAA)');
 
 // Convercion de la fecha de nacimiento a un objeto Date
 const fechaNacimientoObj = new Date(fechaNacimiento.split('/')[2], fechaNacimiento.split('/')[1] - 1, fechaNacimiento.split('/')[0]);
@@ -20,17 +34,13 @@ const mes = hoy.getMonth() - fechaNacimientoObj.getMonth();
 if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimientoObj.getDate())) {
     edad--;
 }
-
+const validacionEdad =(fechaNacimientoObj>=18)? true:false
 // Verificamos si es mayor o menor de edad
-if (edad < 18) {
-    alert('Lo siento, eres menor de edad, no podras jugar y apostar.');
-} else {
-    alert('Bienvenido!');
-}
+//Operador ternario
+validacionEdad ? alert('Bienvenido!'): alert('Lo siento, eres menor de edad, no podras jugar y apostar.')
+*/
 
-//Calcular precio
-//calculo del precioProducto + Iva - descuento
-//Casino slots
+
 const suma = (a, b) => a + b
 const resta = (a, b) => a - b
 
@@ -102,24 +112,27 @@ class Persona {
 const persona1 = new Persona("TOMAS", 22, "Av Barrio Koch");
 persona1.hablar();
 
+
+
+
 //Practicando para entrega
 //Juego ruleta
 const juegoRuleta1Tiro = () => {
     return Math.round(Math.random() * 36)
 }
 
-console.log('Tu tiro arrojo el numero' + juegoRuleta1Tiro())
+console.log(juegoRuleta1Tiro())
 
 //2do tiro
 const juegoRuleta2Tiro = () => {
     return Math.round(Math.random() * 36)
 }
-console.log('Tu 2do tiro arrojo el numero' +juegoRuleta2Tiro())
+console.log(juegoRuleta2Tiro())
 //3er tiro
 const juegoRuleta3Tiro = () => {
     return Math.round(Math.random() * 36)
 }
-console.log('Tu 3er tiro arrojo el numero' +juegoRuleta3Tiro())
+console.log(juegoRuleta3Tiro())
 //Apuestas Virtuales
 class Boca {
     constructor(goles, ganancia, vencedor) {
@@ -210,6 +223,23 @@ const oferta3 = new Date("December 2023, 18")
 console.log(`Participa del torneo de truco a nivel nacional!, para ingresar abonas 300 pesos y ya estas participando. Oferta valida hasta ${oferta3}`)
 
 
+const urlActual2 = window.location.href;
+if (urlActual2 === "file:///Users/tomasduran/Desktop/Twenty-one2/pages/casino.html") {
+
+    let casino = document.querySelector(".En-Vivo");
+    casino.addEventListener("click", function () {
+        prompt("Preparate para jugar, establece tu importe abajo");
+    });
+
+
+    let button = document.getElementById("Button")
+    button.addEventListener("click", function () {
+        alert("Pronto habra mas juegos disponibles");
+    });
+}
+
+//Reduce
+//Apuesta combinada equipos
 const equiposGanadores = [
     { equipos: 'Boca Jrs', precio: 150 },
     { equipos: 'Godoy Cruz', precio: 100 },
@@ -241,12 +271,9 @@ const total2 = gananciasDeApuestas.reduce((acc, el) => acc + el.ganancia, 0)
 console.log('Tus ganacias si se dan los resultados es de ' + total2)
 
 let ganador = "Bayern Munich"
-if (ganador == "Bayern Munich") {
-    console.log('Si Bayer Munich es el ganador tus ganancias son de ' + + (Math.random() * 600))
-}
-else if (ganador !== "Bayern Munich") {
-    console.log('No obtendras ganancias por este partido')
-}
+
+ganador ? console.log('Si Bayern Munich es el ganador tus ganancias son de ' + (Math.random() * 600)) : console.log('No obtendras ganancias por este partido') 
+
 //Hay que ver si esta bien
 //Map
 //Predicciones
@@ -295,9 +322,118 @@ const blackJackCasa = () => {
 }
 
 console.log('Tus cartas para esta mano son de ' + blackJack() + ', la casa obtiene ' + blackJackCasa())
-if (blackJack() > blackJackCasa()) {
-    console.log('Ganaste 500 pesos')
+const mano = (blackJack.return > blackJackCasa.return)? true:false
+
+mano ? console.log('Ganaste 500 pesos'): console.log('Pierdes 500 pesos por no superar a la casa') 
+
+
+
+
+const urlActual = window.location.href;
+if (urlActual === "file:///Users/tomasduran/Desktop/Twenty-one2/index.html") {
+
+    Toastify({
+
+        text: "Hola, somos Twenty-one, si necesitas ayuda escribinos",
+
+        duration: 5000,
+        style: {
+            background: "linear-gradient(to right, #a531c2, rgb(7, 6, 6))",
+        }
+
+    }).showToast();
+    //Para que no se siga repitiendo todo el tiempo
+    const eventoEjecutado = localStorage.getItem("eventoEjecutado");
+    if (!eventoEjecutado) {
+        Swal.fire({
+            title: 'Succes!',
+            text: 'Bienvenido a la mejor casa de apuestas',
+            icon: 'success',
+            confirmButtonText: 'Cool',
+
+        })
+        localStorage.setItem("eventoEjecutado", true);
+    }
+
+    Toastify({
+        text: "Revisa las ofertas que tenemos",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #a531c2, rgb(7, 6, 6))",
+        },
+        onClick: function () { } // Callback after click
+    }).showToast();}
+
+    let partidoDestacados =  document.getElementById("1er-Partido");
+    partidoDestacados.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    }); 
+    
+    let partidoDestacados2 =  document.getElementById("2do-Partido");
+    partidoDestacados2.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    });
+    let partidoDestacados3 =  document.getElementById("3er-Partido");
+    partidoDestacados3.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    });
+    let partidoDestacados4 =  document.getElementById("4to-Partido");
+    partidoDestacados4.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    }); 
+    let partidoDestacados5 =  document.getElementById("5to-Partido");
+    partidoDestacados5.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    }); 
+    let partidoDestacados6 =  document.getElementById("6to-Partido");
+    partidoDestacados6.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    });  
+    let partidoDestacados7 =  document.getElementById("7to-Partido");
+    partidoDestacados7.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    });  
+    let partidoDestacados8 =  document.getElementById("8vo-Partido");
+    partidoDestacados8.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    });         
+    let partidoDestacados9 =  document.getElementById("9no-Partido");
+    partidoDestacados9.addEventListener("click", function() {
+        prompt("Escribe la cantidad apostar y el equipo elegido")
+    });   
+
+
+//Lo que hice basicamente fue que los eventos se repitan una sola vez
+// y en una sola pagina web
+
+
+
+
+
+//Registrate
+
+const urlActual6 = window.location.href;
+if (urlActual6 === "file:///Users/tomasduran/Desktop/Twenty-one2/pages/registrate.html") {
+
+    let miFormulario
+    document.getElementById("Formulario");
+    miFormulario.addEventListener("submit", validarFormulario);
+
+    function validarFormulario(e) {
+        e.preventDefault();
+
+        let formulario = e.target
+
+        console.log(formulario.children[0].value);
+        console.log(formulario.children[1].value);
+    }
+
 }
-else if (blackJack() < blackJackCasa()) {
-    console.log('Pierdes 500 pesos por no superar a la casa')
-}
+
+

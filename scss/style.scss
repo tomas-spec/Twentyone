@@ -377,20 +377,6 @@
 
 
 
-    .Button {
-        @include sizes(90px, 40px);
-        font-size: 20px;
-        color: $color5;
-        background-color: $color3;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-
-
-        .Button:hover {
-            color: $color5;
-        }
-    }
 
     .Quienes-somos-Casino {
         @extend .Quienes-somos;
@@ -780,7 +766,20 @@
         @extend #pie;
     }
 
+    #Button {
+        @include sizes(90px, 40px);
+        font-size: 20px;
+        color: $color5;
+        background-color: $color3;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        border-radius: 10px;
 
+
+        #Button:hover {
+            color: $color5;
+        }
+    }
     /*MediaQueris*/
     /*Mobile First*/
     @media only screen and (min-width: 320px) and (max-width: 767px) {
