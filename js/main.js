@@ -119,10 +119,10 @@ imagenPartido.addEventListener("click", function () {
 console.log("Si apostas 200 a que gana Atletico Madrid y convierte Griezmann 2 goles contra el Sevilla, tus ganancias seran de 3000 pesos")
     
 });
-*/
+
 const atletico = new Atletico("5", 400000, "Atletico Madrid");
 atletico.hablar();
-
+*/
 //Sevilla
 class Sevilla {
     constructor(goles, ganancia, vencedor) {
