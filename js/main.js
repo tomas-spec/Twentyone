@@ -1,44 +1,24 @@
-const eventoRealizado = localStorage.getItem("eventoRealizado");{
-
-let entrada = prompt('Ingrese su nombre');
-
-console.log(entrada);
-
-let salida = prompt(`Bienvenido a Twenty-one, ${entrada}, estas listo para jugar?`);
-
-console.log(salida);
-localStorage.setItem("eventoRealizado", true);
+let usuario = localStorage.getItem('nombre');
+if (usuario == null) {
+    localStorage.setItem('nombre', prompt('INGRESAR NOMBRE'));
+} else {
+    alert('Tu nombre de usuario es ' + usuario);
 }
+
 const fechaNacimiento = prompt("Ingresa tu fecha de nacimiento en formato DD/MM/AAAA:");
 const partesFecha = fechaNacimiento.split('/');
 const dia = parseInt(partesFecha[0]);
-const mes = parseInt(partesFecha[1])-1; // Restamos 1 al mes ya que los meses en JavaScript empiezan desde 0 (enero es 0, febrero es 1, etc.)
-const anio = parseInt(partesFecha[2]); 
-const fechaNac = new Date(anio, mes,);
+const mes = parseInt(partesFecha[1]) - 1; // Restamos 1 al mes ya que los meses en JavaScript empiezan desde 0 (enero es 0, febrero es 1, etc.)
+const año = parseInt(partesFecha[2]);
+const fechaNac = new Date(año, mes,);
 const edad = (new Date() - fechaNac) / (365.25 * 24 * 60 * 60 * 0) // Cálculo de la edad en años
 
- permitirIngreso = (edad >= 18) ? "Puede ingresar" : "No puede ingresar";
+permitirIngreso = (edad >= 18) ? "Puede ingresar" : "No puede ingresar";
 
-alert(permitirIngreso);
-//Menor de edad
-// fecha de nacimiento al usuario
-/*const fechaNacimiento = prompt('Ingrese su fecha de nacimiento (en formato DD/MM/AAAA)');
+permitirIngreso ? alert("Puedes acceder a los juegos"): alert("No podras acceder a los juegos")
 
-// Convercion de la fecha de nacimiento a un objeto Date
-const fechaNacimientoObj = new Date(fechaNacimiento.split('/')[2], fechaNacimiento.split('/')[1] - 1, fechaNacimiento.split('/')[0]);
-
-// Calculo edad a partir de la fecha de nacimiento
-const hoy = new Date();
-let edad = hoy.getFullYear() - fechaNacimientoObj.getFullYear();
-const mes = hoy.getMonth() - fechaNacimientoObj.getMonth();
-if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimientoObj.getDate())) {
-    edad--;
-}
-const validacionEdad =(fechaNacimientoObj>=18)? true:false
-// Verificamos si es mayor o menor de edad
-//Operador ternario
-validacionEdad ? alert('Bienvenido!'): alert('Lo siento, eres menor de edad, no podras jugar y apostar.')
-*/
+const registroIngreso = permitirIngreso >= 18 && new Date()
+console.log(registroIngreso)
 
 
 const suma = (a, b) => a + b
@@ -96,24 +76,6 @@ function finalNba(anotaJokic, anotaLowry, operacion) {
     }
 }
 console.log('Tus ganancias si apostas 80 pesos a que Jokic anota 30 ptos y 90 pesos a que Lowry anota 20 ptos es de : ' + (finalNba(80, 90, "*")))
-//otro ejemplo
-class Persona {
-    constructor(nombre, edad, calle) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.calle = calle;
-
-    }
-    hablar() {
-        console.log("Hola " + this.nombre + ", soy Leonardo, asistente virtual de Twenty-one, en que puedo ayudarte?")
-    }
-}
-
-const persona1 = new Persona("TOMAS", 22, "Av Barrio Koch");
-persona1.hablar();
-
-
-
 
 //Practicando para entrega
 //Juego ruleta
@@ -150,19 +112,14 @@ const boca = new Boca(3, 100000, "Boca Jrs");
 boca.hablar();
 
 //Uefa Champions League
+/*let imagenPartido = document.getElementById("Img-Partido1");
+imagenPartido.addEventListener("click", function () {
+    
 
-class Atletico {
-    constructor(goles, ganancia, vencedor) {
-        this.goles = goles;
-        this.ganancia = ganancia;
-        this.vencedor = vencedor;
-
-    }
-    hablar() {
-        console.log("Si apostas 200 a que gana " + this.vencedor + " y convierte " + this.goles + " goles contra el Sevilla, tus ganancias seran de " + this.ganancia)
-    }
-}
-
+console.log("Si apostas 200 a que gana Atletico Madrid y convierte Griezmann 2 goles contra el Sevilla, tus ganancias seran de 3000 pesos")
+    
+});
+*/
 const atletico = new Atletico("5", 400000, "Atletico Madrid");
 atletico.hablar();
 
@@ -272,7 +229,7 @@ console.log('Tus ganacias si se dan los resultados es de ' + total2)
 
 let ganador = "Bayern Munich"
 
-ganador ? console.log('Si Bayern Munich es el ganador tus ganancias son de ' + (Math.random() * 600)) : console.log('No obtendras ganancias por este partido') 
+ganador ? console.log('Si Bayern Munich es el ganador tus ganancias son de ' + (Math.random() * 600)) : console.log('No obtendras ganancias por este partido')
 
 //Hay que ver si esta bien
 //Map
@@ -322,9 +279,10 @@ const blackJackCasa = () => {
 }
 
 console.log('Tus cartas para esta mano son de ' + blackJack() + ', la casa obtiene ' + blackJackCasa())
-const mano = (blackJack.return > blackJackCasa.return)? true:false
+const mano = (blackJack.return > blackJackCasa.return) ? true : false
 
-mano ? console.log('Ganaste 500 pesos'): console.log('Pierdes 500 pesos por no superar a la casa') 
+mano ? console.log('Ganaste 500 pesos') : console.log('Pierdes 500 pesos por no superar a la casa')
+
 
 
 
@@ -334,7 +292,7 @@ if (urlActual === "file:///Users/tomasduran/Desktop/Twenty-one2/index.html") {
 
     Toastify({
 
-        text: "Hola, somos Twenty-one, si necesitas ayuda escribinos",
+        text: "Hola, soy Leonardo, asistente virtual de Twenty-one, si necesitas ayuda escribinos",
 
         duration: 5000,
         style: {
@@ -354,7 +312,7 @@ if (urlActual === "file:///Users/tomasduran/Desktop/Twenty-one2/index.html") {
         })
         localStorage.setItem("eventoEjecutado", true);
     }
-
+    //CRUD: lo dijo en la clase
     Toastify({
         text: "Revisa las ofertas que tenemos",
         duration: 3000,
@@ -368,72 +326,88 @@ if (urlActual === "file:///Users/tomasduran/Desktop/Twenty-one2/index.html") {
             background: "linear-gradient(to right, #a531c2, rgb(7, 6, 6))",
         },
         onClick: function () { } // Callback after click
-    }).showToast();}
+    }).showToast();
 
-    let partidoDestacados =  document.getElementById("1er-Partido");
-    partidoDestacados.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    }); 
-    
-    let partidoDestacados2 =  document.getElementById("2do-Partido");
-    partidoDestacados2.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    });
-    let partidoDestacados3 =  document.getElementById("3er-Partido");
-    partidoDestacados3.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    });
-    let partidoDestacados4 =  document.getElementById("4to-Partido");
-    partidoDestacados4.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    }); 
-    let partidoDestacados5 =  document.getElementById("5to-Partido");
-    partidoDestacados5.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    }); 
-    let partidoDestacados6 =  document.getElementById("6to-Partido");
-    partidoDestacados6.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    });  
-    let partidoDestacados7 =  document.getElementById("7to-Partido");
-    partidoDestacados7.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    });  
-    let partidoDestacados8 =  document.getElementById("8vo-Partido");
-    partidoDestacados8.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    });         
-    let partidoDestacados9 =  document.getElementById("9no-Partido");
-    partidoDestacados9.addEventListener("click", function() {
-        prompt("Escribe la cantidad apostar y el equipo elegido")
-    });   
+
+}
+
+
+let partidoDestacados = document.getElementById("1er-Partido");
+partidoDestacados.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
+
+let partidoDestacados2 = document.getElementById("2do-Partido");
+partidoDestacados2.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
+let partidoDestacados3 = document.getElementById("3er-Partido");
+partidoDestacados3.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
+let partidoDestacados4 = document.getElementById("4to-Partido");
+partidoDestacados4.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
+let partidoDestacados5 = document.getElementById("5to-Partido");
+partidoDestacados5.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
+let partidoDestacados6 = document.getElementById("6to-Partido");
+partidoDestacados6.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
+let partidoDestacados7 = document.getElementById("7to-Partido");
+partidoDestacados7.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
+let partidoDestacados8 = document.getElementById("8vo-Partido");
+partidoDestacados8.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
+let partidoDestacados9 = document.getElementById("9no-Partido");
+partidoDestacados9.addEventListener("click", function () {
+    prompt("Escribe la cantidad apostar y el equipo elegido")
+});
 
 
 //Lo que hice basicamente fue que los eventos se repitan una sola vez
 // y en una sola pagina web
 
 
-
-
-
-//Registrate
-
-const urlActual6 = window.location.href;
-if (urlActual6 === "file:///Users/tomasduran/Desktop/Twenty-one2/pages/registrate.html") {
-
-    let miFormulario
-    document.getElementById("Formulario");
-    miFormulario.addEventListener("submit", validarFormulario);
-
-    function validarFormulario(e) {
-        e.preventDefault();
-
-        let formulario = e.target
-
-        console.log(formulario.children[0].value);
-        console.log(formulario.children[1].value);
+//Apuesta combinada
+/*class Juegos {
+    constructor(nombre, precio, juegos, bono) {
+        this.nombre = nombre;
+        this.precio = parseFloat(precio);
+        this.juegos = juegos;
+        this.bono = parseInt(bono);
     }
-
 }
+const juegosTwentyOne = [];
+juegosTwentyOne.push(new Juegos("European Roulette", 150, ['Roulette'], 1000));
+juegosTwentyOne.push(new Juegos("Football Champions Cup", 100, ['Apuestas Deportivas'], 3000));
+juegosTwentyOne.push(new Juegos("Instant Roulette", 100, ['Roulette'], 200));
+juegosTwentyOne.push(new Juegos("Sisters Jackpots", 150, ['Jackpots'], 500));
+juegosTwentyOne.push(new Juegos("Futbol Studio", 150, ['Apuestas Deportivas'], 700));
+
+localStorage.setItem('juegosTwentyOne', JSON.stringify(juegosTwentyOne));
+
+let juegosNuevos = localStorage.getItem('JuegosTwentyOne');
 
 
+    if (juegosNuevos != null) {
+        let array = JSON.parse(juegosNuevos);
+        let salida = 'Seleccionar que juego nuevo quieres probar \n';
+        for (let index = 0; index < array.length; index++) {
+            salida += index + ' -> ' + array[index].nombre + ' ' + array[index].precio + ' $ ' + array[index].juegos + '\n';
+        }
+        alert(salida);
+        let eleccion = parseInt(prompt('Ver juegos nuevos'));
+        if ((eleccion >= 0) && (eleccion < array.length)) {
+            alert("Juego seleccionado " + array[eleccion].nombre)
+        } else {
+            alert("Error de seleccion");
+        }
+    }
+*/
