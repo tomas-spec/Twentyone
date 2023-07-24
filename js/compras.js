@@ -1,6 +1,7 @@
 const shopContent = document.getElementById("shopContent")
 const verCarrito = document.getElementById("verCarrito")
 const modalContainer = document.getElementById("modal-container")
+const cantidadCarrito = document.getElementById("cantidadCarrito")
 const productos = [
     {
         id: 1,
@@ -68,10 +69,20 @@ productos.forEach((product) => {
 
         });
         console.log(carrito)
+        saveLocal()
+        
     });
 });
+//set Item
+const saveLocal = () => {
 
-verCarrito.addEventListener("click", () => {
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+}
+
+
+
+//get item
+/*verCarrito.addEventListener("click", () => {
     modalContainer.innerHTML = ""
     modalContainer.style.display = "flex"
     const modalHeader = document.createElement("div")
@@ -106,4 +117,4 @@ verCarrito.addEventListener("click", () => {
     totalBuying.innerHTML = `total a pagar: ${total} $`
     modalContainer.append(totalBuying)
 
-})
+})*/
