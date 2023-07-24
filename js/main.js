@@ -6,12 +6,25 @@ if (usuario == null) {
 }
 
 const fechaNacimiento = prompt("Ingresa tu fecha de nacimiento en formato DD/MM/AAAA:");
+console.log(fechaNacimiento)
 const partesFecha = fechaNacimiento.split('/');
 const dia = parseInt(partesFecha[0]);
 const mes = parseInt(partesFecha[1]) - 1; // Restamos 1 al mes ya que los meses en JavaScript empiezan desde 0 (enero es 0, febrero es 1, etc.)
 const año = parseInt(partesFecha[2]);
-const fechaNac = new Date(año, mes,);
-const edad = (new Date() - fechaNac) / (365.25 * 24 * 60 * 60 * 0) // Cálculo de la edad en años
+
+
+const fechaNac = new Date(año, mes, dia);
+console.log(fechaNac)
+const fechaActual = new Date()
+console.log(fechaActual - fechaNac)
+
+
+console.log(fechaActual)
+console.log(año)
+console.log(mes)
+
+const edad = (fechaActual - fechaNac) / (365.25 * 24 * 60 * 60 ) // Cálculo de la edad en años
+console.log(edad)
 
 permitirIngreso = (edad >= 18) ? "Puede ingresar" : "No puede ingresar";
 
@@ -21,26 +34,7 @@ const registroIngreso = permitirIngreso >= 18 && new Date()
 console.log(registroIngreso)
 
 
-const suma = (a, b) => a + b
-const resta = (a, b) => a - b
 
-const iva = x => x * 1.21
-let precioJuegoCasino = 100
-let descuento = 70
-let nuevoPrecio = (suma(precioJuegoCasino, iva(precioJuegoCasino)), descuento)
-console.log('Cada tiro de Slots cuesta ' + nuevoPrecio)
-//Minimo de Apuestas Deportivas
-let precioApuestasDeportivas = 15
-let descuentoApuestas = 2.5
-
-let nuevoPrecioApuestas = resta(suma(precioApuestasDeportivas, iva(precioApuestasDeportivas)), descuentoApuestas)
-console.log('El minimo para las Apuestas Deportivas es de ' + nuevoPrecioApuestas)
-//Valor de cada ficha en Black Jack 
-let precioApuestasBlackJack = 20
-let descuentoApuestasBlackJack = 2.5
-
-let nuevoPrecioApuestasBlackJack = resta(suma(precioApuestasBlackJack, iva(precioApuestasBlackJack)), descuentoApuestasBlackJack)
-console.log('Cada ficha de Black Jack cuesta ' + nuevoPrecioApuestasBlackJack)
 
 //Apuesta Final de Champions Inter de Milan
 const sumaChampionsInter = (a, b) => a + b
@@ -77,52 +71,8 @@ function finalNba(anotaJokic, anotaLowry, operacion) {
 }
 console.log('Tus ganancias si apostas 80 pesos a que Jokic anota 30 ptos y 90 pesos a que Lowry anota 20 ptos es de : ' + (finalNba(80, 90, "*")))
 
-//Practicando para entrega
-//Juego ruleta
-const juegoRuleta1Tiro = () => {
-    return Math.round(Math.random() * 36)
-}
 
-console.log(juegoRuleta1Tiro())
 
-//2do tiro
-const juegoRuleta2Tiro = () => {
-    return Math.round(Math.random() * 36)
-}
-console.log(juegoRuleta2Tiro())
-//3er tiro
-const juegoRuleta3Tiro = () => {
-    return Math.round(Math.random() * 36)
-}
-console.log(juegoRuleta3Tiro())
-//Apuestas Virtuales
-class Boca {
-    constructor(goles, ganancia, vencedor) {
-        this.goles = goles;
-        this.ganancia = ganancia;
-        this.vencedor = vencedor;
-
-    }
-    hablar() {
-        console.log("Si apostas 3000 pesos a que Boca Jrs convierte " + this.goles + " goles, tu ganancia sera de " + this.ganancia)
-    }
-}
-
-const boca = new Boca(3, 100000, "Boca Jrs");
-boca.hablar();
-
-//Uefa Champions League
-/*let imagenPartido = document.getElementById("Img-Partido1");
-imagenPartido.addEventListener("click", function () {
-    
-
-console.log("Si apostas 200 a que gana Atletico Madrid y convierte Griezmann 2 goles contra el Sevilla, tus ganancias seran de 3000 pesos")
-    
-});
-
-const atletico = new Atletico("5", 400000, "Atletico Madrid");
-atletico.hablar();
-*/
 //Sevilla
 class Sevilla {
     constructor(goles, ganancia, vencedor) {
@@ -180,20 +130,7 @@ const oferta3 = new Date("December 2023, 18")
 console.log(`Participa del torneo de truco a nivel nacional!, para ingresar abonas 300 pesos y ya estas participando. Oferta valida hasta ${oferta3}`)
 
 
-const urlActual2 = window.location.href;
-if (urlActual2 === "file:///Users/tomasduran/Desktop/Twenty-one2/pages/casino.html") {
 
-    let casino = document.querySelector(".En-Vivo");
-    casino.addEventListener("click", function () {
-        prompt("Preparate para jugar, establece tu importe abajo");
-    });
-
-
-    let button = document.getElementById("Button")
-    button.addEventListener("click", function () {
-        alert("Pronto habra mas juegos disponibles");
-    });
-}
 
 //Reduce
 //Apuesta combinada equipos
@@ -271,24 +208,8 @@ const bonificacionEnChampions = partidosDeHoyChampions.map((el) => {
 })
 console.log(bonificacionEnChampions)
 
-const blackJack = () => {
-    return Math.floor(Math.random() * 12 + 10)
-}
-const blackJackCasa = () => {
-    return Math.floor(Math.random() * 12 + 10)
-}
-
-console.log('Tus cartas para esta mano son de ' + blackJack() + ', la casa obtiene ' + blackJackCasa())
-const mano = (blackJack.return > blackJackCasa.return) ? true : false
-
-mano ? console.log('Ganaste 500 pesos') : console.log('Pierdes 500 pesos por no superar a la casa')
 
 
-
-
-
-const urlActual = window.location.href;
-if (urlActual === "file:///Users/tomasduran/Desktop/Twenty-one2/index.html") {
 
     Toastify({
 
@@ -301,8 +222,6 @@ if (urlActual === "file:///Users/tomasduran/Desktop/Twenty-one2/index.html") {
 
     }).showToast();
     //Para que no se siga repitiendo todo el tiempo
-    const eventoEjecutado = localStorage.getItem("eventoEjecutado");
-    if (!eventoEjecutado) {
         Swal.fire({
             title: 'Succes!',
             text: 'Bienvenido a la mejor casa de apuestas',
@@ -310,8 +229,7 @@ if (urlActual === "file:///Users/tomasduran/Desktop/Twenty-one2/index.html") {
             confirmButtonText: 'Cool',
 
         })
-        localStorage.setItem("eventoEjecutado", true);
-    }
+        
     //CRUD: lo dijo en la clase
     Toastify({
         text: "Revisa las ofertas que tenemos",
@@ -329,7 +247,8 @@ if (urlActual === "file:///Users/tomasduran/Desktop/Twenty-one2/index.html") {
     }).showToast();
 
 
-}
+    
+
 
 
 let partidoDestacados = document.getElementById("1er-Partido");
@@ -370,6 +289,46 @@ partidoDestacados9.addEventListener("click", function () {
     prompt("Escribe la cantidad apostar y el equipo elegido")
 });
 
+//Destruccion
+const item = {
+    username_id: "Tomasduran8",
+    product_name: "por Godoy Cruz",
+    price_per_unit: 15
+}
+
+
+const {
+    username_id: id,
+    product_name: nombre,
+    price_per_unit: precio,
+
+} = item
+
+console.log("el usuario " + id + " apuesta el monto de " + precio + "$ " + nombre)
+
+
+
+
+
+//Spread con objetos
+const usuario1 = {
+    username: "Tomasdurannnnn8",
+    ganadores: "Lanus, Instituto, Godoy Cruz, Independiente",
+    apuesta: 1500
+}
+
+const usuario2 = {
+    ...usuario1,
+    ganadores: "Velez, Boca Jrs, River Plate",
+    apuesta: 4000
+}
+
+const usuario3 = {
+    ...usuario1,
+    apuesta: 10000
+}
+
+console.log(usuario3)
 
 //Lo que hice basicamente fue que los eventos se repitan una sola vez
 // y en una sola pagina web
@@ -411,3 +370,4 @@ let juegosNuevos = localStorage.getItem('JuegosTwentyOne');
         }
     }
 */
+
