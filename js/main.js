@@ -6,32 +6,12 @@ if (usuario == null) {
 }
 
 const fechaNacimiento = prompt("Ingresa tu fecha de nacimiento en formato DD/MM/AAAA:");
-console.log(fechaNacimiento)
-const partesFecha = fechaNacimiento.split('/');
-const dia = parseInt(partesFecha[0]);
-const mes = parseInt(partesFecha[1]) - 1; // Restamos 1 al mes ya que los meses en JavaScript empiezan desde 0 (enero es 0, febrero es 1, etc.)
-const año = parseInt(partesFecha[2]);
 
-
-const fechaNac = new Date(año, mes, dia);
-console.log(fechaNac)
-const fechaActual = new Date()
-console.log(fechaActual - fechaNac)
-
-
-console.log(fechaActual)
-console.log(año)
-console.log(mes)
-
-const edad = (fechaActual - fechaNac) / (365.25 * 24 * 60 * 60 ) // Cálculo de la edad en años
-console.log(edad)
-
-permitirIngreso = (edad >= 18) ? "Puede ingresar" : "No puede ingresar";
+permitirIngreso = (fechaNacimiento() >= 18) ? "Puede ingresar" : "No puede ingresar";
 
 permitirIngreso ? alert("Puedes acceder a los juegos"): alert("No podras acceder a los juegos")
 
-const registroIngreso = permitirIngreso >= 18 && new Date()
-console.log(registroIngreso)
+
 
 
 
