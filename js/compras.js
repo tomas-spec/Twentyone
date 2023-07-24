@@ -82,7 +82,7 @@ verCarrito.addEventListener("click", () => {
 
 
     const modalbutton = document.createElement("h1")
-    modalbutton.innerText = "x"
+    modalbutton.innerText = "cerrar"
     modalbutton.className = "modal-header-button"
     modalbutton.addEventListener("click", () => {
         modalContainer.style.display = "none"
@@ -96,11 +96,11 @@ verCarrito.addEventListener("click", () => {
         carritoContent.innerHTML = `
     <img src = "${product.img}">
     <h3>${product.nombre}</h3>
-    <p>${product.precio}<p>
+    <p>${product.precio}$<p>
     `
         modalContainer.append(carritoContent)
     })
-    const total = carrito.reduce((acc, el) => + el.precio, 0)
+    const total = carrito.reduce((acc, el) => acc + el.precio, 0)
     const totalBuying = document.createElement("div")
     totalBuying.className = "total-content"
     totalBuying.innerHTML = `total a pagar: ${total} $`

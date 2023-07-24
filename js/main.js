@@ -1,17 +1,17 @@
-let usuario = localStorage.getItem('nombre');
+const usuario = localStorage.getItem('nombre');
 if (usuario == null) {
     localStorage.setItem('nombre', prompt('INGRESAR NOMBRE'));
 } else {
     alert('Tu nombre de usuario es ' + usuario);
 }
 
-const fechaNacimiento = prompt("Ingresa tu fecha de nacimiento en formato DD/MM/AAAA:");
+/*const fechaNacimiento = prompt("Ingresa su edad: ");
 
-permitirIngreso = (fechaNacimiento() >= 18) ? "Puede ingresar" : "No puede ingresar";
+const permitirIngreso = (fechaNacimiento() >= 18) ? "Puede ingresar" : "No puede ingresar";
 
 permitirIngreso ? alert("Puedes acceder a los juegos"): alert("No podras acceder a los juegos")
 
-
+*/
 
 
 
