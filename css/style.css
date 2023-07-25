@@ -495,7 +495,7 @@ label {
 }
 
 .cantidad-carrito {
-  background-color: red;
+  background-color: #a531c2;
   color: rgb(247, 239, 239);
   border-radius: 50%;
   font-size: 12px;
@@ -504,6 +504,14 @@ label {
   right: 14px;
   position: absolute;
   display: none;
+}
+
+.sumar {
+  cursor: pointer;
+}
+
+.restar {
+  cursor: pointer;
 }
 
 /*Grid Area*/

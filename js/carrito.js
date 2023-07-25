@@ -24,7 +24,12 @@ const pintarCarrito = ()=>{
     <img src = "${product.img}">
     <h3>${product.nombre}</h3>
     <p>${product.precio}$<p>
+    <span class="restar"> - </span>
+    <p>Cantidad: ${product.cantidad}</p>
+    <span class="restar"> + </span>
+    <p>Ganancia: ${product.cantidad * product.precio * 5}</p>
     `
+    //<p>Total: ${product.cantidad * product.precio}</p>
         modalContainer.append(carritoContent)
 
 
@@ -36,7 +41,7 @@ const pintarCarrito = ()=>{
     eliminar.addEventListener("click", eliminarProducto)
 
     })
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0)
+    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0)
     const totalBuying = document.createElement("div")
     totalBuying.className = "total-content"
     totalBuying.innerHTML = `total a pagar: ${total} $`
@@ -51,6 +56,9 @@ const eliminarProducto = () => {
     carrito = carrito.filter((carritoId) => {
         return carritoId !== foundId;
 })
+
+saveLocal()
 pintarCarrito()
 }
+
 

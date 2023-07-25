@@ -5,51 +5,72 @@ const cantidadCarrito = document.getElementById("cantidadCarrito")
 const productos = [
     {
         id: 1,
-        nombre: "Sevilla vs Real Sociedad",
+        nombre: "Real Sociedad",
         precio: 5000,
-        img: '/Users/tomasduran/Desktop/Twenty-one2/imagenes/Ligas.jpg'
+        img: "../imagenes/Ligas.jpg",
+        cantidad: 1,
     },
     {
         id: 2,
-        nombre: 'Los Pumas vs All blacks',
+        nombre: 'Los Pumas',
         precio: 2500,
-        img: '/Users/tomasduran/Desktop/Twenty-one2/imagenes/rugby.jpeg'
+        img: '../imagenes/rugby.jpeg',
+        cantidad: 1,
     },
 
     {
         id: 3,
-        nombre: 'Federer vs Nadal',
+        nombre: 'Roger Federer',
         precio: 500,
-        img: '/Users/tomasduran/Desktop/Twenty-one2/imagenes/Tenis.jpg'
+        img: '../imagenes/Tenis.jpg',
+        cantidad: 1,
     },
     {
         id: 4,
-        nombre: 'Federer vs Nadal',
+        nombre: 'River Plate',
         precio: 500,
-        img: '/Users/tomasduran/Desktop/Twenty-one2/imagenes/Tenis.jpg'
+        img: "../imagenes/EstadioRiver-kebab-case.jpeg",
+        cantidad: 1,
     },
     {
         id: 5,
-        nombre: 'Federer vs Nadal',
+        nombre: 'BlackJack',
         precio: 500,
-        img: '/Users/tomasduran/Desktop/Twenty-one2/imagenes/Tenis.jpg'
+        img: '../imagenes/blackjack-online-kebab-case.png',
+        cantidad: 1,
     },
     {
         id: 6,
-        nombre: 'Federer vs Nadal',
+        nombre: 'Roulette',
         precio: 500,
-        img: '/Users/tomasduran/Desktop/Twenty-one2/imagenes/Tenis.jpg'
+        img: '../imagenes/ruletta-casino-kebab-case.jpeg',
+        cantidad: 1,
+    },
+    {
+        id: 7,
+        nombre: 'Checo Perez',
+        precio: 500,
+        img: '../imagenes/F1.jpg',
+        cantidad: 1,
+    },
+    {
+        id: 8,
+        nombre: 'Boca Jrs',
+        precio: 500,
+        img: '../imagenes/Tenis.jpg',
+        cantidad: 1,
     },
 
 ];
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 productos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card"
     content.innerHTML = `
             <img src="${product.img}"  width="100%" height="150px">
-            <h3>Nombre: ${product.nombre}</h3>
-            <p class="price">Precio: ${product.precio}</p>
+            <h2>🔴 Apostar en Vivo por: </h2>
+            <h3>${product.nombre}</h3>
+            <p class="price">Precio: ${product.precio}$</p>
     `
 
     shopContent.append(content);
@@ -61,16 +82,28 @@ productos.forEach((product) => {
     content.append(comprar)
 
     comprar.addEventListener("click", () => {
+
+    const repeat = carrito.some((repeatProduct)=> repeatProduct.id === product.id)
+    if (repeat){
+        carrito.map((prod)=> {
+            if(prod.id === product.id){
+                prod.cantidad++
+            }
+        })
+    } else{
         carrito.push({
             id: product.id,
             img: product.img,
             nombre: product.nombre,
             precio: product.precio,
+            cantidad: product.cantidad,
 
         });
+    }
         console.log(carrito)
-        saveLocal()
         
+        saveLocal()
+
     });
 });
 //set Item
@@ -82,39 +115,8 @@ const saveLocal = () => {
 
 
 //get item
-/*verCarrito.addEventListener("click", () => {
-    modalContainer.innerHTML = ""
-    modalContainer.style.display = "flex"
-    const modalHeader = document.createElement("div")
-    modalHeader.className = "modal-header"
-    modalHeader.innerHTML - `
-    <h1 class="modal-header-title">Carrito.<h1>`
-    modalContainer.append(modalHeader)
 
 
-    const modalbutton = document.createElement("h1")
-    modalbutton.innerText = "cerrar"
-    modalbutton.className = "modal-header-button"
-    modalbutton.addEventListener("click", () => {
-        modalContainer.style.display = "none"
-    })
 
-    modalHeader.append(modalbutton)
 
-    carrito.forEach((product) => {
-        let carritoContent = document.createElement("div")
-        carritoContent.className = "modal-content"
-        carritoContent.innerHTML = `
-    <img src = "${product.img}">
-    <h3>${product.nombre}</h3>
-    <p>${product.precio}$<p>
-    `
-        modalContainer.append(carritoContent)
-    })
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0)
-    const totalBuying = document.createElement("div")
-    totalBuying.className = "total-content"
-    totalBuying.innerHTML = `total a pagar: ${total} $`
-    modalContainer.append(totalBuying)
 
-})*/
