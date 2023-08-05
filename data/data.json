@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "nombre": "Real Sociedad",
+        "precio": 5000,
+        "img": "../imagenes/Ligas.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Los Pumas",
+        "precio": 2500,
+        "img": "../imagenes/rugby.jpeg",
+        "cantidad": 1
+    },
+
+    {
+        "id": 3,
+        "nombre": "Roger Federer",
+        "precio": 500,
+        "img": "../imagenes/Tenis.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "River Plate",
+        "precio": 500,
+        "img": "../imagenes/EstadioRiver-kebab-case.jpeg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "BlackJack",
+        "precio": 500,
+        "img": "../imagenes/blackjack-online-kebab-case.png",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Roulette",
+        "precio": 500,
+        "img": "../imagenes/ruletta-casino-kebab-case.jpeg",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Checo Perez",
+        "precio": 500,
+        "img": "../imagenes/F1.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Boca Jrs",
+        "precio": 500,
+        "img": "../imagenes/Tenis.jpg",
+        "cantidad": 1
+    }
+
+]
