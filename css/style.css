@@ -514,6 +514,11 @@ label {
   cursor: pointer;
 }
 
+.price {
+  color: #a531c2;
+  font-family: Quicksand;
+}
+
 /*Grid Area*/
 /*INDEX*/
 #Grilla {
