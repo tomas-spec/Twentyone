@@ -66,7 +66,7 @@ const productos = [
 let carrito= JSON.parse(localStorage.getItem("carrito")) || []
 
 const getProducts = async () => {
-    const resp = await fetch ('https://assets/data/data.json')
+    const resp = await fetch ('.././assets/data/data.json')
     const data = await resp.json()
 
     data.forEach((product)=>{
