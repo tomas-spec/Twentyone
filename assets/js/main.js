@@ -1,86 +1,86 @@
-const usuario = localStorage.getItem('nombre');
-if (usuario == null) {
-    localStorage.setItem('nombre', prompt('INGRESAR NOMBRE'));
-} else {
-    alert('Tu nombre de usuario es ' + usuario);
+function solicitarNombre(){
+    let nombreIngresado = prompt("ingresar nombre")
+    alert("el nombre Ingresado es " + nombreIngresado)
+}
+solicitarNombre()
+
+
+let numeroGoles = 4
+
+if(numeroGoles == 5){
+    console.log("Ganaste en tu primer apuesta")
+} else{
+    console.log("No has ganado tu apuesta")
 }
 
+let golesMilan = prompt("ingresar cuantos goles mete hoy Milan")
+if(golesMilan = 2){
+    console.log("Si el Milan mete dos goles tu premio es de 600 pesos")
+} if( golesMilan = 3){
+    console.log("Si Milan mete tres goles ganaran 1200")
+}
+else{
+    console.log("No ganaste nada")
+}
+
+let repetir = false
+do{
+    console.log("dolo una vez")
+} while(repetir);
+
+let resultadoGoles = 4
+
+function sumar (golEquipoLocal, golEquipoVisitante){
+    resultadoGoles = golEquipoLocal + golEquipoVisitante
+}
+
+function mostrar (mensaje) {
+    console.log(mensaje)
+}
+
+sumar(6,3)
+mostrar("El partido termino 6 a 3, hubo " + resultadoGoles + "goles en total, si tu apuesta fue de 9 goles ganaste 15000 pesos")
+
+// funciones flecha
+//Calculo de Combinada
 
 
-    Toastify({
+const suma = (a, b) => a + b
 
-        text: "Hola, soy Leonardo, asistente virtual de Twenty-one, si necesitas ayuda escribinos",
+const resta = (a, b) => a - b
 
-        duration: 5000,
-        style: {
-            background: "linear-gradient(to right, #a531c2, rgb(7, 6, 6))",
-        }
+const multiplicadorCombinada = x => x * 4.6
+let precioApostado = 8000
+let descuentoPrimerApuesta = 500
+//Calculo de precio apostado + precioApostado - descuentoPrimerApuesta
 
-    }).showToast();
-    //Para que no se siga repitiendo todo el tiempo
-        Swal.fire({
-            title: 'Succes!',
-            text: 'Bienvenido a la mejor casa de apuestas',
-            icon: 'success',
-            confirmButtonText: 'Cool',
-
-        })
-        
-    //CRUD: lo dijo en la clase
-    Toastify({
-        text: "Revisa las ofertas que tenemos",
-        duration: 3000,
-        destination: "https://github.com/apvarun/toastify-js",
-        newWindow: true,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "left", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-            background: "linear-gradient(to right, #a531c2, rgb(7, 6, 6))",
-        },
-        onClick: function () { } // Callback after click
-    }).showToast();
+let ganancia = resta(suma(precioApostado, multiplicadorCombinada(precioApostado)), descuentoPrimerApuesta)
+console.log(ganancia)
 
 
-    
+function calculadoraCombinadas (primerGanancia, segundaGanancia, operacion){
+    switch(operacion){
+        // ganas
+        case "*":
+            return primerGanancia * segundaGanancia;
+            break;
+        // si perdes
+        case "-":
+            return primerGanancia - segundaGanancia;
+            break;
+    }
+}
+
+console.log(calculadoraCombinadas(8000, 8000, "*"))
+console.log(calculadoraCombinadas(8000, 8000, "-"))
 
 
+const suma2 = (a,b) => a + b
+const resta2 = (a,b) => a - b
 
-let partidoDestacados = document.getElementById("1er-Partido");
-partidoDestacados.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
+const iva = x => x * 0.21
+let precioPaquteBingo = 10000
+let descuentoDevolucion = 5000
 
-let partidoDestacados2 = document.getElementById("2do-Partido");
-partidoDestacados2.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
-let partidoDestacados3 = document.getElementById("3er-Partido");
-partidoDestacados3.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
-let partidoDestacados4 = document.getElementById("4to-Partido");
-partidoDestacados4.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
-let partidoDestacados5 = document.getElementById("5to-Partido");
-partidoDestacados5.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
-let partidoDestacados6 = document.getElementById("6to-Partido");
-partidoDestacados6.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
-let partidoDestacados7 = document.getElementById("7to-Partido");
-partidoDestacados7.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
-let partidoDestacados8 = document.getElementById("8vo-Partido");
-partidoDestacados8.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
-let partidoDestacados9 = document.getElementById("9no-Partido");
-partidoDestacados9.addEventListener("click", function () {
-    prompt("Escribe la cantidad apostar y el equipo elegido")
-});
+let nuevoPrecioPaqueteBingo = resta2(suma2(precioPaquteBingo, iva(precioPaquteBingo)), descuentoDevolucion)
+console.log(nuevoPrecioPaqueteBingo)
