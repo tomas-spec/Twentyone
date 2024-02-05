@@ -632,51 +632,9 @@
         }
     }
 //Carrito
-.shop-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-left: 80px;
-    margin-right:80px;
-
-}
-.card{
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    max-width: 300px;
-    margin:auto;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: $font2;
 
 
-
-    }
-    .price{
-        color: $color2;
-        font-size: 22px;
-    }
-
-.card button{
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: $color6;
-    background-color: $color1;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-.card button:hover{
-    opacity: 0.7;
-}
-.Logo-Carrito{
-    width: 50px;
-    height: 40px;
-
-}
-.modal-container {
+.Informacion {
     width: 80%;
     margin: 0 10%;
     max-height: 88vh;
@@ -689,49 +647,9 @@
     overflow: auto;
     z-index: 9;
     top: 12vh;
-
-    .modal-content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 70%;
-        margin: 10px;
-    }
-
-}
-.modal-container::-webkit-scrollbar{
-    display: none;
 }
 
-.modal-header{
-    display: flex;
-    justify-content: space-around;
-    background-color: $color1;
-    color: $color5;
-    width: 100%;
-}
-.modal-header-title{
-    justify-self: start;
-}
-.modal-header-button{
-    cursor: pointer;
-}
-.modal-container > div > img{
-    height: 120px;
-    width: 120px;
-}
-.total-content{
-    font-size: 25px;
-    padding: 20px;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.delete-product{
-    cursor: pointer;
-}
-.cantidad-carrito{
+.card{
     background-color: $color3;
     color: $color5;
     border-radius: 50%;
@@ -742,17 +660,13 @@
     position: absolute;
     display: none;
 }
-.sumar{
-    cursor: pointer;
-}
-.restar{
-    cursor: pointer;
-}
 
-.price{
+
+.Precio-apuesta{
     color: #a531c2;
     font-family: $font2;
 }
+
     /*Grid Area*/
     /*INDEX*/
     #Grilla {
