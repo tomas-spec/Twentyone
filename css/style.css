@@ -261,8 +261,11 @@ label {
   padding: 10px;
 }
 
-.Header-Info h1, .Header-Info .Header-Registrate h2, .Header-Registrate .Header-Info h2, .Header-Info .Header-Casino h2, .Header-Casino .Header-Info h2 {
-  font-size: 52px;
+.Header-Info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .Aclaraciones-Info {
@@ -391,36 +394,53 @@ label {
   }
 }
 
-.Informacion {
-  width: 80%;
-  margin: 0 10%;
-  max-height: 88vh;
-  color: pink;
-  background-color: rgb(7, 6, 6);
+.verCarrito {
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 3.5vh;
+  cursor: pointer;
+}
+
+/*Banner styles*/
+/*Product card*/
+.shop-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  overflow: auto;
-  z-index: 9;
-  top: 12vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .card {
-  background-color: #a531c2;
-  color: rgb(247, 239, 239);
-  border-radius: 50%;
-  font-size: 12px;
-  padding: 4px;
-  top: 37px;
-  right: 14px;
-  position: absolute;
-  display: none;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  max-width: 300px;
+  max-height: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: Quicksand;
 }
 
-.Precio-apuesta {
+.card > img {
+  width: 100%;
+  height: 50%;
+}
+
+.price {
   color: #a531c2;
-  font-family: Quicksand;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }
 
 /*Grid Area*/

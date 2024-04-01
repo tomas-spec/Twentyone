@@ -448,9 +448,11 @@
     }
 
     .Header-Info {
-        h1 {
-            font-size: 52px;
-        }
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
     }
 
     .Quienes-somos-Info {
@@ -632,41 +634,49 @@
         }
     }
 //Carrito
-
-
-.Informacion {
-    width: 80%;
-    margin: 0 10%;
-    max-height: 88vh;
-    color:$color6;
-    background-color: $color1;
+.verCarrito{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+/*Banner styles*/
+/*Product card*/
+.shop-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    overflow: auto;
-    z-index: 9;
-    top: 12vh;
-}
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
 
+}
 .card{
-    background-color: $color3;
-    color: $color5;
-    border-radius: 50%;
-    font-size: 12px;
-    padding: 4px;
-    top: 37px;
-    right: 14px;
-    position: absolute;
-    display: none;
-}
-
-
-.Precio-apuesta{
-    color: #a531c2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.2);
+    max-width: 300px;
+    max-height: 500px;
+    margin: auto;
+    text-align: center;
     font-family: $font2;
 }
-
+.card > img{
+    width: 100%;
+    max-height: 50%;
+}
+.price{
+    color: $color3;
+    font-size: 22px;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+}
+.card button:hover{
+    opacity: 0.7;
+}
     /*Grid Area*/
     /*INDEX*/
     #Grilla {
